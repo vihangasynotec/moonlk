@@ -2882,6 +2882,3280 @@ ul, ol {
 }
 
   </style>
+<!-- Embedded Self-Contained Stylesheet for 100% Server Compatibility -->
+  <style>
+/* ==========================================================================
+   MOONLK CLOTHING — ATELIER DESIGN SYSTEM
+   Luxury Light Pink + White Editorial Theme
+   Kurunegala, Sri Lanka
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand Color Palette */
+  --color-white: #FFFFFF;
+  --color-porcelain: #FAF8F6;
+  --color-bg-alt: #F6F3F0;
+  --color-bg-subtle: #FDFBF9;
+  
+  /* Luxury Soft Blush & Rose Tones */
+  --color-pink-50: #FFF5F4;
+  --color-pink-100: #FAECEB;
+  --color-pink-200: #F3DCDA;
+  --color-pink-300: #E7C2BE;
+  --color-pink-400: #D8A5A1;
+  --color-pink-accent: #E2ADA8;
+  --color-pink-deep: #B87974;
+
+  /* Typography Colors */
+  --color-charcoal-900: #141415;
+  --color-charcoal-800: #242426;
+  --color-charcoal-700: #3E3E42;
+  --color-charcoal-600: #5C5C62;
+  --color-charcoal-400: #8C8C94;
+  --color-charcoal-200: #D6D6DB;
+  
+  /* Luxury Gold & Warm Accents */
+  --color-gold: #C5A47E;
+  --color-gold-light: #DFCAAF;
+  --color-border: rgba(36, 36, 38, 0.08);
+  --color-border-hover: rgba(36, 36, 38, 0.18);
+  --color-border-pink: rgba(231, 194, 190, 0.4);
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 2px 8px rgba(20, 20, 21, 0.04);
+  --shadow-md: 0 8px 24px rgba(20, 20, 21, 0.06);
+  --shadow-lg: 0 16px 40px rgba(20, 20, 21, 0.08);
+  --shadow-drawer: -12px 0 40px rgba(20, 20, 21, 0.12);
+  --shadow-pink: 0 10px 30px rgba(231, 194, 190, 0.25);
+
+  /* Typography Hierarchy */
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Layout Dimensions */
+  --max-width: 1440px;
+  --header-height: 80px;
+  --announcement-height: 38px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --border-radius-full: 9999px;
+
+  /* Transitions & Timing */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.2s var(--ease-in-out);
+  --transition-base: 0.35s var(--ease-out-expo);
+  --transition-smooth: 0.6s var(--ease-out-expo);
+}
+
+/* Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal-800);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body.lock-scroll {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  transition: all var(--transition-fast);
+}
+
+input, select, textarea {
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--color-pink-deep);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Typography Base Classes */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.heading-display {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: clamp(2.5rem, 5vw, 4.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--color-charcoal-900);
+}
+
+.heading-section {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: clamp(2rem, 3.8vw, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--color-charcoal-900);
+}
+
+.heading-card {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 1.3;
+  color: var(--color-charcoal-900);
+}
+
+.subheading-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-pink-deep);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subheading-label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background-color: var(--color-pink-deep);
+}
+
+.lead-text {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--color-charcoal-600);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 3.5vw, 3.5rem);
+  padding-right: clamp(1.25rem, 3.5vw, 3.5rem);
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1rem, 2.5vw, 2.5rem);
+  padding-right: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+/* Micro-animations and Global Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.03); }
+}
+
+@keyframes tickerAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.7s var(--ease-out-expo) forwards;
+}
+
+/* Glassmorphic Backgrounds */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-drawer {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-porcelain);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-pink-300);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pink-deep);
+}
+
+
+/* ==========================================================================
+   MOONLK CLOTHING — UI COMPONENTS
+   Buttons, Badges, Product Cards, Drawers, Modals, Toasts
+   ========================================================================== */
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.95rem 1.85rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-sm {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.75rem;
+}
+
+.btn-lg {
+  padding: 1.15rem 2.5rem;
+  font-size: 0.875rem;
+}
+
+.btn-dark {
+  background-color: var(--color-charcoal-900);
+  color: var(--color-white);
+  border: 1px solid var(--color-charcoal-900);
+}
+
+.btn-dark:hover {
+  background-color: var(--color-charcoal-700);
+  border-color: var(--color-charcoal-700);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-blush {
+  background-color: var(--color-pink-200);
+  color: var(--color-charcoal-900);
+  border: 1px solid var(--color-pink-300);
+}
+
+.btn-blush:hover {
+  background-color: var(--color-pink-300);
+  box-shadow: var(--shadow-pink);
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: var(--color-charcoal-900);
+  border: 1px solid var(--color-charcoal-800);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--color-charcoal-900);
+  color: var(--color-white);
+}
+
+.btn-outline-light {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--color-white);
+  color: var(--color-charcoal-900);
+  border-color: var(--color-white);
+}
+
+.btn-text {
+  padding: 0.25rem 0;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-900);
+  position: relative;
+}
+
+.btn-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transition: width var(--transition-base);
+}
+
+.btn-text:hover::after {
+  background-color: var(--color-pink-deep);
+}
+
+/* Icon Buttons */
+.btn-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  color: var(--color-charcoal-800);
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.btn-icon:hover {
+  border-color: var(--color-pink-300);
+  background-color: var(--color-pink-50);
+  color: var(--color-pink-deep);
+}
+
+/* --- Badges --- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: var(--border-radius-sm);
+  line-height: 1;
+}
+
+.badge-new {
+  background-color: var(--color-pink-100);
+  color: var(--color-charcoal-900);
+  border: 1px solid var(--color-pink-300);
+}
+
+.badge-bestseller {
+  background-color: var(--color-charcoal-900);
+  color: var(--color-white);
+}
+
+.badge-exclusive {
+  background-color: var(--color-gold-light);
+  color: var(--color-charcoal-900);
+}
+
+.badge-limited {
+  background-color: var(--color-pink-deep);
+  color: var(--color-white);
+}
+
+/* Counter Badge */
+.badge-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: var(--color-pink-deep);
+  color: var(--color-white);
+  font-size: 0.65rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-white);
+}
+
+/* ==========================================================================
+   MINIMAL FASHION PRODUCT CARD
+   Editorial 3:4 portrait, dual-image hover, quick size drawer
+   ========================================================================== */
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  transition: transform var(--transition-base);
+}
+
+.product-card-media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: var(--color-porcelain);
+  border-radius: var(--border-radius-sm);
+}
+
+.product-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.75s var(--ease-out-expo), opacity 0.5s ease;
+}
+
+.product-card-image-secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.75s var(--ease-out-expo);
+  pointer-events: none;
+}
+
+.product-card:hover .product-card-image {
+  transform: scale(1.05);
+}
+
+.product-card:hover .product-card-image-secondary {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Card Floating Badges & Wishlist */
+.product-card-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+}
+
+.product-card-wishlist {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: var(--color-charcoal-700);
+  transition: all var(--transition-fast);
+}
+
+.product-card-wishlist:hover,
+.product-card-wishlist.active {
+  background: var(--color-white);
+  color: var(--color-pink-deep);
+  transform: scale(1.1);
+  box-shadow: var(--shadow-sm);
+}
+
+.product-card-wishlist.active svg {
+  fill: var(--color-pink-deep);
+  stroke: var(--color-pink-deep);
+}
+
+/* Quick Add Overlay */
+.product-card-quick-add {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(20, 20, 21, 0.85), transparent);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all var(--transition-base);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-card:hover .product-card-quick-add {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.quick-add-sizes-title {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.quick-add-sizes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.size-pill-btn {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-charcoal-900);
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.size-pill-btn:hover {
+  background: var(--color-pink-200);
+  transform: translateY(-2px);
+}
+
+/* Product Card Information */
+.product-card-body {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.product-card-category {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-400);
+}
+
+.product-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  font-weight: 400;
+  color: var(--color-charcoal-900);
+  line-height: 1.25;
+  transition: color var(--transition-fast);
+}
+
+.product-card:hover .product-card-title {
+  color: var(--color-pink-deep);
+}
+
+.product-card-pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-top: 0.2rem;
+}
+
+.product-card-price {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-charcoal-800);
+  letter-spacing: 0.02em;
+}
+
+/* Color Swatches on Card */
+.product-card-swatches {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.swatch-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(20, 20, 21, 0.2);
+}
+
+/* ==========================================================================
+   OFF-CANVAS DRAWERS (Cart Drawer, Wishlist Drawer, Mobile Nav)
+   ========================================================================== */
+
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 21, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-base), visibility var(--transition-base);
+}
+
+.drawer-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 460px;
+  background: var(--color-white);
+  z-index: 1001;
+  transform: translateX(100%);
+  transition: transform var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-drawer);
+}
+
+.drawer.active {
+  transform: translateX(0);
+}
+
+.drawer-header {
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.drawer-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--color-charcoal-900);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.drawer-title span {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--color-charcoal-400);
+}
+
+.drawer-close-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--color-charcoal-700);
+  transition: background-color var(--transition-fast);
+}
+
+.drawer-close-btn:hover {
+  background-color: var(--color-pink-100);
+  color: var(--color-charcoal-900);
+}
+
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Free Shipping Meter */
+.shipping-progress-box {
+  background: var(--color-pink-50);
+  border: 1px solid var(--color-pink-200);
+  border-radius: var(--border-radius-sm);
+  padding: 0.9rem 1rem;
+}
+
+.shipping-progress-text {
+  font-size: 0.8125rem;
+  color: var(--color-charcoal-700);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shipping-progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-pink-200);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.shipping-progress-fill {
+  height: 100%;
+  background-color: var(--color-pink-deep);
+  transition: width 0.5s var(--ease-out-expo);
+}
+
+/* Cart Item Row */
+.cart-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.15rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 106px;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  background-color: var(--color-porcelain);
+}
+
+.cart-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.cart-item-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--color-charcoal-900);
+}
+
+.cart-item-meta {
+  font-size: 0.75rem;
+  color: var(--color-charcoal-600);
+  margin-top: 0.2rem;
+}
+
+.cart-item-delete {
+  color: var(--color-charcoal-400);
+  padding: 0.2rem;
+  transition: color var(--transition-fast);
+}
+
+.cart-item-delete:hover {
+  color: #d9534f;
+}
+
+.cart-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.qty-control {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-porcelain);
+  font-size: 0.85rem;
+}
+
+.qty-btn:hover {
+  background: var(--color-pink-100);
+}
+
+.qty-value {
+  width: 32px;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.cart-item-price {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-charcoal-900);
+}
+
+/* Empty Drawer State */
+.drawer-empty {
+  padding: 3.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-charcoal-600);
+}
+
+.drawer-empty-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--color-pink-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-pink-deep);
+  margin-bottom: 0.5rem;
+}
+
+/* Drawer Footer */
+.drawer-footer {
+  padding: 1.5rem 1.75rem;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Coupon Input */
+.coupon-box {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.coupon-input {
+  flex: 1;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.75rem;
+  border-radius: var(--border-radius-sm);
+  text-transform: uppercase;
+}
+
+.coupon-apply-btn {
+  padding: 0.65rem 1rem;
+  font-size: 0.75rem;
+}
+
+.applied-coupon-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.75rem;
+  background: var(--color-pink-100);
+  border: 1px dashed var(--color-pink-300);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.75rem;
+  color: var(--color-charcoal-900);
+}
+
+.drawer-totals {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-charcoal-600);
+}
+
+.total-row.grand-total {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-charcoal-900);
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+  margin-top: 0.25rem;
+}
+
+/* ==========================================================================
+   MODALS (Product Quick-View, Size Chart, Atelier Booking, Search)
+   ========================================================================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 21, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1050;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: var(--color-white);
+  border-radius: var(--border-radius-md);
+  width: 100%;
+  max-width: 960px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  transform: scale(0.96) translateY(12px);
+  transition: all var(--transition-base);
+}
+
+.modal-overlay.active .modal-content {
+  transform: scale(1) translateY(0);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-charcoal-800);
+  z-index: 10;
+  transition: all var(--transition-fast);
+}
+
+.modal-close-btn:hover {
+  background: var(--color-pink-100);
+  transform: rotate(90deg);
+}
+
+/* Product Detail Modal Split Layout */
+.product-modal-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  min-height: 580px;
+}
+
+.product-modal-gallery {
+  padding: 2rem;
+  background: var(--color-porcelain);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-modal-main-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  background: #FFF;
+}
+
+.product-modal-main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-modal-thumbs {
+  display: flex;
+  gap: 0.65rem;
+}
+
+.thumb-item {
+  width: 64px;
+  height: 84px;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  opacity: 0.65;
+  transition: all var(--transition-fast);
+}
+
+.thumb-item.active,
+.thumb-item:hover {
+  border-color: var(--color-pink-deep);
+  opacity: 1;
+}
+
+.thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product Modal Info Side */
+.product-modal-details {
+  padding: 2.5rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.product-modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.product-modal-edition {
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-pink-deep);
+  font-weight: 600;
+}
+
+.product-modal-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--color-charcoal-900);
+}
+
+.product-modal-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-charcoal-800);
+  margin-top: 0.25rem;
+}
+
+.product-modal-desc {
+  font-size: 0.875rem;
+  color: var(--color-charcoal-600);
+  line-height: 1.6;
+}
+
+/* Options Pickers */
+.option-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-700);
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-options-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.color-option-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  transition: transform var(--transition-fast);
+}
+
+.color-option-btn.selected {
+  outline: 2px solid var(--color-charcoal-900);
+  outline-offset: 2px;
+}
+
+.size-options-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.size-btn {
+  min-width: 44px;
+  height: 40px;
+  padding: 0 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.size-btn:hover {
+  border-color: var(--color-pink-deep);
+  background: var(--color-pink-50);
+}
+
+.size-btn.selected {
+  border-color: var(--color-charcoal-900);
+  background: var(--color-charcoal-900);
+  color: var(--color-white);
+}
+
+/* Stock Warning */
+.stock-warning-badge {
+  font-size: 0.75rem;
+  color: #B45309;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Modal Actions */
+.product-modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Accordion in Product Modal */
+.product-accordion {
+  border-top: 1px solid var(--color-border);
+  margin-top: 0.75rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.accordion-trigger {
+  width: 100%;
+  padding: 0.85rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-800);
+  text-align: left;
+}
+
+.accordion-trigger svg {
+  transition: transform var(--transition-base);
+}
+
+.accordion-item.open .accordion-trigger svg {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-base);
+  font-size: 0.8125rem;
+  color: var(--color-charcoal-600);
+  line-height: 1.6;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 250px;
+  padding-bottom: 1rem;
+}
+
+/* --- TOAST NOTIFICATIONS --- */
+.toast-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  min-width: 280px;
+  max-width: 380px;
+  background: var(--color-charcoal-900);
+  color: var(--color-white);
+  padding: 0.9rem 1.25rem;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  animation: fadeIn 0.4s var(--ease-out-expo) forwards;
+  border-left: 3px solid var(--color-pink-accent);
+}
+
+.toast-icon {
+  color: var(--color-pink-accent);
+  display: flex;
+  flex-shrink: 0;
+}
+
+
+/* ==========================================================================
+   MOONLK CLOTHING — SECTIONS STYLES
+   Editorial Home, Shop, Lookbook, Journal, Kurunegala Store, Footer
+   ========================================================================== */
+
+/* --- 1. Announcement Bar --- */
+.announcement-bar {
+  background-color: var(--color-pink-100);
+  border-bottom: 1px solid var(--color-pink-200);
+  height: var(--announcement-height);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 110;
+}
+
+.announcement-inner {
+  display: flex;
+  white-space: nowrap;
+  animation: tickerAnimation 32s linear infinite;
+}
+
+.announcement-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0 2rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-800);
+}
+
+.announcement-item::after {
+  content: "•";
+  color: var(--color-pink-deep);
+  margin-left: 1.25rem;
+}
+
+.announcement-bar:hover .announcement-inner {
+  animation-play-state: paused;
+}
+
+/* --- 2. Site Header & Sticky Navigation --- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-border);
+  transition: all var(--transition-base);
+}
+
+.site-header.scrolled {
+  box-shadow: var(--shadow-sm);
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+/* Header Left: Brand & Mobile Toggle */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+/* Header Center: Navigation Links */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-700);
+  position: relative;
+  padding: 0.4rem 0;
+  transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: var(--color-pink-deep);
+  transition: width var(--transition-base);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-charcoal-900);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Nav Item Dropdown */
+.nav-item-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-item-dropdown:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: -1rem;
+  min-width: 230px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--border-radius-sm);
+  padding: 0.6rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-base);
+  z-index: 105;
+}
+
+.nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-700);
+  transition: all var(--transition-fast);
+}
+
+.nav-dropdown-item:hover {
+  background: var(--color-pink-50);
+  color: var(--color-pink-deep);
+  padding-left: 1.5rem;
+}
+
+.nav-dropdown-tag {
+  font-size: 0.625rem;
+  color: var(--color-pink-deep);
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* Enhanced Nav Search Trigger */
+.nav-search-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.85rem;
+  background: var(--color-porcelain);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-full);
+  font-size: 0.75rem;
+  color: var(--color-charcoal-600);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.nav-search-btn:hover {
+  background: var(--color-white);
+  border-color: var(--color-pink-300);
+  color: var(--color-charcoal-900);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-search-kbd {
+  font-size: 0.625rem;
+  font-weight: 600;
+  padding: 0.15rem 0.4rem;
+  background: rgba(20, 20, 21, 0.06);
+  border-radius: 3px;
+  color: var(--color-charcoal-500);
+  letter-spacing: 0.05em;
+}
+
+/* Header Center: Brand Logo with Emblem */
+.brand-identity-link {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  transition: transform var(--transition-fast);
+}
+
+.brand-identity-link:hover {
+  transform: translateY(-1px);
+}
+
+.brand-logo-emblem {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 2px solid var(--color-pink-300);
+  box-shadow: 0 3px 12px rgba(216, 165, 161, 0.25);
+  transition: all var(--transition-fast);
+  background-color: var(--color-pink-50);
+  flex-shrink: 0;
+}
+
+.brand-identity-link:hover .brand-logo-emblem {
+  border-color: var(--color-pink-deep);
+  box-shadow: 0 5px 18px rgba(184, 121, 116, 0.35);
+  transform: scale(1.05);
+}
+
+.brand-text-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.brand-logo-title {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--color-charcoal-900);
+  line-height: 1;
+}
+
+.brand-logo-title .brand-accent {
+  color: var(--color-pink-deep);
+  font-family: var(--font-serif);
+}
+
+.brand-logo-tagline {
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-pink-deep);
+  margin-top: 0.25rem;
+  white-space: nowrap;
+}
+
+/* Header Right: Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.currency-toggle {
+  display: flex;
+  align-items: center;
+  background: var(--color-porcelain);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  padding: 2px;
+}
+
+.currency-btn {
+  padding: 0.25rem 0.55rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+}
+
+.currency-btn.active {
+  background: var(--color-white);
+  color: var(--color-charcoal-900);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* --- 3. Hero Campaign Section --- */
+.hero-section {
+  position: relative;
+  background-color: var(--color-pink-50);
+  overflow: hidden;
+  min-height: calc(100vh - var(--header-height) - var(--announcement-height));
+  display: flex;
+  align-items: center;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 6rem);
+  padding-top: clamp(2rem, 4vw, 4rem);
+  padding-bottom: clamp(2rem, 4vw, 4rem);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 2;
+}
+
+.hero-edition-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--color-white);
+  padding: 0.45rem 1rem;
+  border-radius: var(--border-radius-full);
+  border: 1px solid var(--color-pink-200);
+  width: fit-content;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-800);
+}
+
+.hero-edition-pill .pulse-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-pink-deep);
+  border-radius: 50%;
+  animation: pulseSubtle 2s infinite;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.75rem, 5.5vw, 5rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--color-charcoal-900);
+}
+
+.hero-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-pink-deep);
+}
+
+.hero-description {
+  font-size: clamp(1rem, 1.25vw, 1.1875rem);
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-charcoal-700);
+  max-width: 520px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.hero-meta-row {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border-pink);
+}
+
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-meta-number {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 400;
+  color: var(--color-charcoal-900);
+  line-height: 1.1;
+}
+
+.hero-meta-label {
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-400);
+}
+
+/* Hero Media Split */
+.hero-media-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-media-card {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 3.2 / 4.4;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background-color: var(--color-white);
+}
+
+.hero-media-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.hero-badge-overlay {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1.25rem;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.hero-badge-info h4 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-charcoal-900);
+}
+
+.hero-badge-info p {
+  font-size: 0.75rem;
+  color: var(--color-pink-deep);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* --- 4. Brand Story Section --- */
+.story-section {
+  padding: clamp(5rem, 8vw, 8.5rem) 0;
+  background-color: var(--color-white);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 7rem);
+  align-items: center;
+}
+
+.story-imagery-mosaic {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.25rem;
+}
+
+.story-img-main {
+  aspect-ratio: 3 / 4;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.story-img-main img,
+.story-img-secondary img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-img-secondary {
+  aspect-ratio: 3 / 4.2;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  transform: translateY(2.5rem);
+  box-shadow: var(--shadow-md);
+}
+
+.story-floating-stat {
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+  background: var(--color-pink-50);
+  border: 1px solid var(--color-pink-200);
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-md);
+  z-index: 2;
+}
+
+.story-floating-stat span {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-charcoal-900);
+  line-height: 1;
+}
+
+.story-floating-stat small {
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-pink-deep);
+  font-weight: 600;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.story-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pillar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.pillar-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-900);
+}
+
+.pillar-desc {
+  font-size: 0.8125rem;
+  color: var(--color-charcoal-600);
+  line-height: 1.6;
+}
+
+/* --- 5. Category Portals (Men, Women, Kids, Accessories) --- */
+.categories-section {
+  padding: clamp(4rem, 7vw, 7rem) 0;
+  background-color: var(--color-porcelain);
+}
+
+.section-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: clamp(2.5rem, 4vw, 4rem);
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.section-header-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-portals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.category-portal-card {
+  position: relative;
+  aspect-ratio: 3 / 4.4;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  cursor: pointer;
+}
+
+.category-portal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.category-portal-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-out-expo);
+}
+
+.category-portal-card:hover .category-portal-bg {
+  transform: scale(1.08);
+}
+
+.category-portal-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 20, 21, 0.8) 0%, rgba(20, 20, 21, 0.1) 50%, transparent 100%);
+  transition: opacity var(--transition-fast);
+}
+
+.category-portal-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.75rem 1.5rem;
+  z-index: 2;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.category-portal-tag {
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-pink-200);
+  font-weight: 600;
+}
+
+.category-portal-name {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.category-portal-cta {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.category-portal-card:hover .category-portal-cta {
+  color: var(--color-white);
+  transform: translateX(4px);
+}
+
+/* --- 6. New Arrivals / Shop Catalog Section --- */
+.shop-section {
+  padding: clamp(5rem, 8vw, 8rem) 0;
+  background-color: var(--color-white);
+}
+
+/* Filter Controls Bar */
+.shop-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.category-filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--border-radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--color-porcelain);
+  color: var(--color-charcoal-700);
+  transition: all var(--transition-fast);
+}
+
+.filter-pill:hover {
+  background: var(--color-pink-100);
+  color: var(--color-charcoal-900);
+}
+
+.filter-pill.active {
+  background: var(--color-charcoal-900);
+  color: var(--color-white);
+}
+
+.shop-sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.sort-select {
+  padding: 0.55rem 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+}
+
+.grid-view-toggle {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.view-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-charcoal-600);
+}
+
+.view-btn.active {
+  border-color: var(--color-charcoal-900);
+  color: var(--color-charcoal-900);
+  background: var(--color-porcelain);
+}
+
+/* Products Grid Layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem 1.75rem;
+}
+
+.products-grid.grid-view-editorial {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem 2.5rem;
+}
+
+.products-grid.grid-view-editorial .product-card-title {
+  font-size: 1.5rem;
+}
+
+/* --- 7. Editorial Lookbook Section --- */
+.lookbook-section {
+  padding: clamp(5rem, 8vw, 8rem) 0;
+  background-color: var(--color-pink-50);
+}
+
+.lookbook-spread-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.lookbook-image-container {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background-color: #000;
+}
+
+.lookbook-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hotspot Pins on Lookbook */
+.hotspot-pin {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  border: 2px solid var(--color-pink-deep);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-charcoal-900);
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: all var(--transition-fast);
+  z-index: 5;
+  box-shadow: 0 0 0 4px rgba(226, 173, 168, 0.4);
+  animation: pulseSubtle 2.5s infinite;
+}
+
+.hotspot-pin:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+  background: var(--color-pink-deep);
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.hotspot-tooltip {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-white);
+  padding: 0.65rem 0.95rem;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-md);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all var(--transition-fast);
+  z-index: 10;
+  font-size: 0.75rem;
+  border: 1px solid var(--color-border);
+}
+
+.hotspot-tooltip-title {
+  font-weight: 600;
+  color: var(--color-charcoal-900);
+}
+
+.hotspot-tooltip-price {
+  color: var(--color-pink-deep);
+  font-weight: 600;
+}
+
+.hotspot-pin:hover .hotspot-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.lookbook-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.lookbook-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.35;
+  color: var(--color-charcoal-900);
+  border-left: 2px solid var(--color-pink-accent);
+  padding-left: 1.5rem;
+}
+
+.lookbook-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* --- 8. Kurunegala Flagship Atelier Showcase --- */
+.flagship-section {
+  padding: clamp(5rem, 8vw, 8.5rem) 0;
+  background-color: var(--color-white);
+}
+
+.flagship-card {
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  box-shadow: var(--shadow-sm);
+}
+
+.flagship-media {
+  aspect-ratio: 4 / 3.5;
+  position: relative;
+  background-color: var(--color-porcelain);
+}
+
+.flagship-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flagship-media-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-900);
+  border: 1px solid var(--color-border);
+}
+
+.flagship-info {
+  padding: clamp(2rem, 4.5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.store-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: 0.875rem;
+  color: var(--color-charcoal-700);
+}
+
+.store-detail-icon {
+  color: var(--color-pink-deep);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.flagship-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* --- 9. Atelier Journal --- */
+.journal-section {
+  padding: clamp(5rem, 8vw, 8rem) 0;
+  background-color: var(--color-porcelain);
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.journal-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.journal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.journal-card-media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--color-porcelain);
+}
+
+.journal-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.journal-card:hover .journal-card-media img {
+  transform: scale(1.06);
+}
+
+.journal-card-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.journal-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.6875rem;
+  color: var(--color-charcoal-400);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.journal-category {
+  color: var(--color-pink-deep);
+  font-weight: 600;
+}
+
+.journal-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--color-charcoal-900);
+}
+
+.journal-excerpt {
+  font-size: 0.8125rem;
+  color: var(--color-charcoal-600);
+  line-height: 1.6;
+}
+
+/* --- 10. Instagram / Community Feed --- */
+.instagram-section {
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  background-color: var(--color-white);
+}
+
+.insta-header-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.75rem;
+}
+
+.insta-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+}
+
+.insta-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.insta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 20, 21, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  color: var(--color-white);
+  transition: opacity var(--transition-fast);
+}
+
+.insta-item:hover img {
+  transform: scale(1.08);
+}
+
+.insta-item:hover .insta-overlay {
+  opacity: 1;
+}
+
+/* --- 11. VIP Newsletter Club --- */
+.newsletter-section {
+  background-color: var(--color-pink-100);
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  border-top: 1px solid var(--color-pink-200);
+}
+
+.newsletter-box {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 100%;
+  max-width: 480px;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 0.9rem 1.25rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.8125rem;
+  border: 1px solid var(--color-border);
+}
+
+/* --- 12. Luxury Footer --- */
+.site-footer {
+  background-color: var(--color-charcoal-900);
+  color: rgba(255, 255, 255, 0.75);
+  padding-top: clamp(4.5rem, 7vw, 7rem);
+  padding-bottom: 2.5rem;
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-brand-identity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.footer-logo-emblem {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 2px solid rgba(243, 220, 218, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  background: var(--color-charcoal-800);
+}
+
+.footer-logo {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: var(--color-white);
+  line-height: 1.1;
+}
+
+.footer-logo-sub {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-pink-accent);
+  margin-top: 0.2rem;
+}
+
+.footer-tagline {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  max-width: 320px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-col h5 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 1.25rem;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+}
+
+.footer-links-list a:hover {
+  color: var(--color-pink-accent);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  font-size: 0.75rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.payment-badges-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.payment-badge-pill {
+  padding: 0.35rem 0.65rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* ==========================================================================
+   MOONLK CLOTHING — RESPONSIVE & MOBILE APP STYLES
+   Fluid Breakpoints, Mobile Navigation Bar, Zero-Overflow Architecture
+   ========================================================================== */
+
+/* Global Zero-Overflow Guard */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* --- Mobile Bottom App Bar --- */
+.mobile-bottom-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--color-border);
+  z-index: 990;
+  box-shadow: 0 -4px 16px rgba(20, 20, 21, 0.05);
+  padding: 0 0.5rem;
+}
+
+.mobile-bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.mobile-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: var(--color-charcoal-600);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  width: 58px;
+  transition: color var(--transition-fast);
+}
+
+.mobile-nav-item.active,
+.mobile-nav-item:hover {
+  color: var(--color-charcoal-900);
+}
+
+.mobile-nav-item .badge-count {
+  top: -2px;
+  right: 10px;
+}
+
+/* Tablet & Mobile Off-canvas Navigation */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  max-width: 360px;
+  background: var(--color-white);
+  z-index: 1002;
+  transform: translateX(-100%);
+  transition: transform var(--transition-smooth);
+  box-shadow: 12px 0 40px rgba(20, 20, 21, 0.12);
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.25rem;
+  gap: 1.75rem;
+  overflow-y: auto;
+}
+
+.mobile-nav-drawer.active {
+  transform: translateX(0);
+}
+
+.mobile-nav-drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mobile-nav-drawer-link {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--color-charcoal-900);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- Breakpoint: max-width 1200px --- */
+@media (max-width: 1200px) {
+  .category-portals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+}
+
+/* --- Breakpoint: max-width 992px (Tablet) --- */
+@media (max-width: 992px) {
+  .header-nav {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-media-wrap {
+    order: -1;
+    width: 100%;
+  }
+
+  .hero-media-card {
+    max-width: 480px;
+    margin: 0 auto;
+    aspect-ratio: 4 / 4.6;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+
+  .lookbook-spread-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .flagship-card {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .insta-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-modal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-modal-gallery {
+    padding: 1.5rem;
+  }
+
+  .product-modal-details {
+    padding: 1.5rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* --- Breakpoint: max-width 768px (Mobile Devices) --- */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 64px; /* Room for mobile bottom app bar */
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container,
+  .container-wide {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    overflow: hidden;
+  }
+
+  /* Sticky Header on Mobile */
+  .site-header {
+    height: 64px;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .header-container {
+    padding: 0 0.75rem !important;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
+  .header-left {
+    gap: 0.45rem;
+    min-width: 0;
+    flex-shrink: 1;
+  }
+
+  .brand-identity-link {
+    gap: 0.45rem;
+    min-width: 0;
+  }
+
+  .brand-logo-emblem {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+  }
+
+  .brand-text-group {
+    min-width: 0;
+  }
+
+  .brand-logo-title {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
+
+  .brand-logo-tagline {
+    display: none; /* Hide long subtitle on mobile to prevent overflow */
+  }
+
+  .header-actions {
+    gap: 0.35rem;
+    flex-shrink: 0;
+  }
+
+  .currency-toggle {
+    padding: 1px;
+  }
+
+  .currency-btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.625rem;
+  }
+
+  .nav-search-btn {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .nav-search-btn span,
+  .nav-search-btn .nav-search-kbd {
+    display: none; /* Hide text, keep sleek icon on mobile */
+  }
+
+  .btn-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .mobile-nav-toggle {
+    width: 34px;
+    height: 34px;
+  }
+
+  .mobile-bottom-bar {
+    display: block;
+  }
+
+  /* Announcement Ticker on Mobile */
+  .announcement-bar {
+    height: 32px;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .announcement-item {
+    font-size: 0.6rem;
+    padding: 0 0.85rem;
+  }
+
+  /* Hero Section on Mobile */
+  .hero-section {
+    min-height: auto;
+    padding: 1.25rem 0 2.5rem;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    gap: 1.75rem;
+    overflow: hidden;
+  }
+
+  .hero-media-wrap {
+    order: -1;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .hero-media-card {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3 / 3.8;
+    border-radius: var(--border-radius-sm);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-badge-overlay {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    width: auto;
+    max-width: calc(100% - 1.5rem);
+    box-sizing: border-box;
+    padding: 0.65rem 0.85rem;
+    gap: 0.5rem;
+    border-radius: var(--border-radius-sm);
+  }
+
+  .hero-badge-info {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .hero-badge-info p {
+    font-size: 0.625rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero-badge-info h4 {
+    font-size: 0.875rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero-badge-overlay .btn {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.6875rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .hero-edition-pill {
+    font-size: 0.625rem;
+    padding: 0.35rem 0.75rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 7.5vw, 2.75rem);
+    line-height: 1.1;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .hero-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.65rem;
+    margin-top: 0.25rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.8125rem;
+  }
+
+  .hero-meta-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .hero-meta-number {
+    font-size: 1.4rem;
+  }
+
+  .hero-meta-label {
+    font-size: 0.58rem;
+  }
+
+  /* Story Section on Mobile */
+  .story-section {
+    padding: 3.5rem 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .story-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .story-imagery-mosaic {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .story-img-main {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .story-img-secondary {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    transform: none;
+  }
+
+  .story-floating-stat {
+    position: static;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .story-pillars {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Category Portals on Mobile */
+  .categories-section {
+    padding: 3rem 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .category-portals-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .category-portal-card {
+    aspect-ratio: 16 / 10;
+  }
+
+  /* Shop Catalog on Mobile */
+  .shop-section {
+    padding: 3rem 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .shop-filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 0;
+  }
+
+  .category-filter-pills {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    gap: 0.4rem;
+  }
+
+  .category-filter-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-pill {
+    flex-shrink: 0;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.7rem;
+  }
+
+  .shop-sort-controls {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .sort-select {
+    flex: 1;
+    font-size: 0.72rem;
+  }
+
+  /* 2-col fashion card on mobile like luxury mobile apps */
+  .products-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.25rem 0.65rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .product-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .product-card-title {
+    font-size: 0.95rem;
+    line-height: 1.25;
+  }
+
+  .product-card-price {
+    font-size: 0.8125rem;
+  }
+
+  .product-card-quick-add {
+    display: none; /* In mobile, tap card opens quick view modal with full sizing */
+  }
+
+  /* Lookbook on Mobile */
+  .lookbook-section {
+    padding: 3rem 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .lookbook-spread-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .lookbook-image-container {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--border-radius-sm);
+  }
+
+  .hotspot-pin {
+    width: 24px;
+    height: 24px;
+    font-size: 0.6875rem;
+  }
+
+  /* Flagship Store on Mobile */
+  .flagship-section {
+    padding: 3rem 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .flagship-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: var(--border-radius-sm);
+  }
+
+  .flagship-media {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+
+  .flagship-info {
+    padding: 1.75rem 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .flagship-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.65rem;
+  }
+
+  .flagship-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Journal on Mobile */
+  .journal-section {
+    padding: 3rem 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  /* Drawers and Modals on Mobile */
+  .drawer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .drawer-body {
+    padding: 1.25rem 1rem;
+  }
+
+  .drawer-footer {
+    padding: 1.25rem 1rem;
+  }
+
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal-content {
+    max-height: 88vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+  }
+
+  /* Footer on Mobile */
+  .site-footer {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer-top-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+
+  .footer-bottom div {
+    text-align: left !important;
+    width: 100%;
+  }
+
+  .toast-container {
+    bottom: 5rem;
+    right: 1rem;
+    left: 1rem;
+  }
+
+  .toast {
+    max-width: 100%;
+  }
+}
+
+  </style>
 </head>
 <body>
 
@@ -4294,6 +7568,2258 @@ ul, ol {
   </div>
 
   <!-- Embedded Self-Contained Application Scripts -->
+  <script>
+/**
+ * MoonLK Clothing - Atelier Catalog & Curated Editorial Data
+ * Kurunegala, Sri Lanka
+ */
+
+const MOONLK_DATA = {
+  brand: {
+    name: "MOONLK",
+    tagline: "Contemporary Atelier & Island Silhouettes",
+    origin: "Kurunegala, Sri Lanka",
+    address: "No. 48, Colombo Road, Kurunegala, North Western Province, Sri Lanka",
+    phone: "+94 37 222 8490",
+    email: "atelier@moonlk.com",
+    established: "2024",
+    hours: "Tuesday – Sunday: 10:00 AM – 7:30 PM (Poya Days Closed)",
+    currencyRateUSD: 0.0033 // 1 LKR approx 0.0033 USD (or 1 USD = 305 LKR)
+  },
+
+  products: [
+    {
+      id: "mlk-w-01",
+      name: "Aura Silk Charmeuse Slip Gown",
+      category: "women",
+      subCategory: "Gowns",
+      edition: "Edition 04 / Tropical Minimalism",
+      priceLKR: 32500,
+      badge: "NEW ARRIVAL",
+      rating: 4.9,
+      reviewCount: 28,
+      featured: true,
+      material: "100% Organic Island Mulberry Silk",
+      colorOptions: [
+        { name: "Blush Champagne", hex: "#E8C8C4", class: "blush" },
+        { name: "Porcelain Ivory", hex: "#F7F5F0", class: "ivory" },
+        { name: "Obsidian Noir", hex: "#1A1A1A", class: "noir" }
+      ],
+      sizes: ["XS", "S", "M", "L"],
+      images: [
+        "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "Draped by master artisans in our Kurunegala atelier, this floor-grazing slip gown honors clean verticality. Featuring bias-cut mulberry silk with a subtle liquid luster that catches the warm tropical light.",
+      details: [
+        "Bias cut for a natural body-skimming drape",
+        "Adjustable delicate micro-rouleau straps",
+        "Deep cowl neckline with reinforced French seams",
+        "Dry clean only or cold hand wash with silk detergent",
+        "Ethically tailored in Kurunegala, Sri Lanka"
+      ],
+      inStock: true,
+      stockCount: 6
+    },
+    {
+      id: "mlk-w-02",
+      name: "Sylvan Tailored Linen Blazer",
+      category: "women",
+      subCategory: "Tailoring",
+      edition: "Edition 04 / Tropical Minimalism",
+      priceLKR: 28900,
+      badge: "BESTSELLER",
+      rating: 5.0,
+      reviewCount: 42,
+      featured: true,
+      material: "100% Hand-Spun Belgian-Sri Lankan Linen",
+      colorOptions: [
+        { name: "Soft Petal Pink", hex: "#F3DCDA", class: "petal" },
+        { name: "Raw Ecru", hex: "#EFECE6", class: "ecru" },
+        { name: "Smoked Sage", hex: "#C2C9BF", class: "sage" }
+      ],
+      sizes: ["S", "M", "L", "XL"],
+      images: [
+        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "A relaxed, boyfriend-cut single-breasted blazer constructed from breathable, dense-weave linen. Perfect for balmy evening vernissages or smart office tailoring in Colombo and Kurunegala.",
+      details: [
+        "Horn button front closure with notched lapel",
+        "Lightweight cupro half-lining for equatorial breathability",
+        "Dual jetted welt flap pockets",
+        "Pre-washed for a buttery, broken-in feel",
+        "Designed and hand-finished in Kurunegala"
+      ],
+      inStock: true,
+      stockCount: 9
+    },
+    {
+      id: "mlk-m-01",
+      name: "Ceylon Cuban Relaxed Camp Shirt",
+      category: "men",
+      subCategory: "Shirts",
+      edition: "Heritage Edition",
+      priceLKR: 18500,
+      badge: "NEW",
+      rating: 4.8,
+      reviewCount: 31,
+      featured: true,
+      material: "Pure Washed Organic Linen",
+      colorOptions: [
+        { name: "Ivory Mist", hex: "#F5F3EF", class: "ivory" },
+        { name: "Blush Sand", hex: "#EBD8D4", class: "sand" },
+        { name: "Charcoal Slate", hex: "#2B2B2C", class: "charcoal" }
+      ],
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      images: [
+        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "An effortless sartorial essential designed for the tropical climate. Features an open Cuban camp collar, relaxed boxy cut, and mother-of-pearl buttons hand-sewn in our studio.",
+      details: [
+        "Relaxed boxy silhouette with drop shoulder",
+        "Authentic shell mother-of-pearl buttons",
+        "Side split hem with bar-tack reinforcement",
+        "Naturally thermoregulating linen fibers",
+        "Handcrafted in Sri Lanka"
+      ],
+      inStock: true,
+      stockCount: 14
+    },
+    {
+      id: "mlk-m-02",
+      name: "Atelier Pleated Tropical Trousers",
+      category: "men",
+      subCategory: "Trousers",
+      edition: "Tailoring Series",
+      priceLKR: 24500,
+      badge: "LIMITED",
+      rating: 4.9,
+      reviewCount: 19,
+      featured: false,
+      material: "Linen & Tencel Suiting Twill",
+      colorOptions: [
+        { name: "Dune Sand", hex: "#D9CEC5", class: "dune" },
+        { name: "Pale Rose Ash", hex: "#DFD2D0", class: "roseash" },
+        { name: "Midnight Ink", hex: "#1C1C1E", class: "ink" }
+      ],
+      sizes: ["30", "32", "34", "36"],
+      images: [
+        "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "Combining European tailoring precision with Sri Lankan casual ease. Double reverse pleats create a fluid drape down to a subtly tapered cuff.",
+      details: [
+        "Double reverse front pleats for fluid drape",
+        "Side adjusters with antique brass buckles (no belt needed)",
+        "Deep pocket bags crafted from organic cotton muslin",
+        "Blind stitched hems with 2-inch extension allowance",
+        "Tailored in Kurunegala"
+      ],
+      inStock: true,
+      stockCount: 7
+    },
+    {
+      id: "mlk-w-03",
+      name: "Seraphina Organza Tiered Sundress",
+      category: "women",
+      subCategory: "Dresses",
+      edition: "Edition 04 / Tropical Minimalism",
+      priceLKR: 36000,
+      badge: "ATELIER EXCLUSIVE",
+      rating: 5.0,
+      reviewCount: 18,
+      featured: true,
+      material: "Hand-Loomed Cotton Organza",
+      colorOptions: [
+        { name: "Ethereal Blush", hex: "#F6E5E3", class: "ethereal" },
+        { name: "Alabaster White", hex: "#FAFAFA", class: "alabaster" }
+      ],
+      sizes: ["XS", "S", "M", "L"],
+      images: [
+        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "An architectural marvel of sheer layers and airy tiered volume. Features an open back tied with exaggerated silk ribbons and hidden side seam pockets.",
+      details: [
+        "Hand-gathered tier panels for romantic volume",
+        "Self-tie grosgrain back sash ribbons",
+        "Built-in 100% fine cotton slip lining",
+        "Discrete in-seam pockets",
+        "Kurunegala Atelier bespoke edition"
+      ],
+      inStock: true,
+      stockCount: 4
+    },
+    {
+      id: "mlk-k-01",
+      name: "Heirloom Linen Smocked Romper",
+      category: "kids",
+      subCategory: "Toddler & Baby",
+      edition: "Little Moon Atelier",
+      priceLKR: 12500,
+      badge: "NEW",
+      rating: 4.9,
+      reviewCount: 15,
+      featured: false,
+      material: "Hypoallergenic Certified Organic Linen",
+      colorOptions: [
+        { name: "Dusty Blossom", hex: "#EBCFCF", class: "blossom" },
+        { name: "Porcelain Cream", hex: "#F5F2EC", class: "cream" }
+      ],
+      sizes: ["6-12M", "12-18M", "2-3Y", "4-5Y"],
+      images: [
+        "https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "Crafted for precious milestones. Delicately hand-smocked across the chest by artisanal women embroiderers in the Kurunegala district, using chemical-free botanical dyes.",
+      details: [
+        "Hand-smocked yoke with subtle rose gold threading",
+        "Wooden coconut shell snap closures for easy dressing",
+        "Gentle elasticated leg cuffs that never pinch",
+        "Pre-softened to protect sensitive young skin",
+        "Community handcrafted in Kurunegala"
+      ],
+      inStock: true,
+      stockCount: 11
+    },
+    {
+      id: "mlk-k-02",
+      name: "Petit Voyageur Cotton Set",
+      category: "kids",
+      subCategory: "Sets",
+      edition: "Little Moon Atelier",
+      priceLKR: 14800,
+      badge: "POPULAR",
+      rating: 4.8,
+      reviewCount: 22,
+      featured: false,
+      material: "GOTS Certified Pima Cotton Rib",
+      colorOptions: [
+        { name: "Almond & Petal", hex: "#EEDAD7", class: "almond" },
+        { name: "Cloud Mist", hex: "#F3F5F7", class: "cloud" }
+      ],
+      sizes: ["2-3Y", "4-5Y", "6-7Y"],
+      images: [
+        "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "A two-piece leisure set comprising a mock-neck pullover and relaxed drawstring shorts. Durable yet cloud-soft for young exploratory spirits.",
+      details: [
+        "Two-piece coordinated top and bloomer short",
+        "Flat-locked sensory friendly interior seams",
+        "Natural drawstring waist with contrast pink tassels",
+        "Machine wash gentle, tumble dry low",
+        "Made in Sri Lanka"
+      ],
+      inStock: true,
+      stockCount: 15
+    },
+    {
+      id: "mlk-a-01",
+      name: "The Luna Woven Raffia & Calfskin Tote",
+      category: "accessories",
+      subCategory: "Bags",
+      edition: "Artisan Leathercraft",
+      priceLKR: 26500,
+      badge: "BESTSELLER",
+      rating: 5.0,
+      reviewCount: 54,
+      featured: true,
+      material: "Natural Talipot Palm Fiber & Full Grain Leather",
+      colorOptions: [
+        { name: "Blush Nude Leather", hex: "#DDB8B4", class: "nude" },
+        { name: "Caramel Sienna", hex: "#B87C52", class: "caramel" }
+      ],
+      sizes: ["One Size"],
+      images: [
+        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "Woven by generational artisans using indigenous Sri Lankan palm weave techniques, trimmed with supple Italian-tanned blush calfskin and gold-toned MoonLK hardware.",
+      details: [
+        "Removable internal canvas zip pouch",
+        "Reinforced hand-stitched leather handles",
+        "Gold foil debossed MoonLK atelier monogram",
+        "Protective brass feet on base",
+        "Includes bespoke silk dustbag"
+      ],
+      inStock: true,
+      stockCount: 8
+    },
+    {
+      id: "mlk-a-02",
+      name: "Solstice Sculpted Pink Quartz Choker",
+      category: "accessories",
+      subCategory: "Fine Jewellery",
+      edition: "Ceylon Gem Collection",
+      priceLKR: 19800,
+      badge: "LIMITED EDITION",
+      rating: 4.9,
+      reviewCount: 37,
+      featured: false,
+      material: "18K Vermeil Gold & Raw Sri Lankan Rose Quartz",
+      colorOptions: [
+        { name: "Vermeil Rose Gold", hex: "#E8B2A7", class: "rosegold" },
+        { name: "Sterling Silver", hex: "#DCDDE1", class: "silver" }
+      ],
+      sizes: ["Adjustable (38-44cm)"],
+      images: [
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "Ethically mined in the gem-rich valleys of Ratnapura and sculpted in our North Western atelier. Each natural pink quartz stone possesses a unique crystalline formation.",
+      details: [
+        "Authentic Ceylon natural rose quartz cabochon",
+        "Heavy 2.5 micron 18k gold over 925 sterling silver",
+        "Custom MoonLK crescent toggle clasp",
+        "Hypoallergenic and nickel-free",
+        "Hand-polished in Sri Lanka"
+      ],
+      inStock: true,
+      stockCount: 5
+    },
+    {
+      id: "mlk-w-04",
+      name: "Kandyan Sculpted Wrap Trench",
+      category: "women",
+      subCategory: "Outerwear",
+      edition: "Edition 04 / Tropical Minimalism",
+      priceLKR: 44000,
+      badge: "RUNWAY PIECE",
+      rating: 5.0,
+      reviewCount: 16,
+      featured: true,
+      material: "Heavy Tropical Cotton Gabardine",
+      colorOptions: [
+        { name: "Pale Blush Sand", hex: "#EBDAD7", class: "blushsand" },
+        { name: "Stone White", hex: "#F2EFEB", class: "stone" }
+      ],
+      sizes: ["XS", "S", "M", "L"],
+      images: [
+        "https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "A showstopping deconstructed trench coat celebrating modern architectural silhouettes. Features exaggerated storm flaps, wide lapels, and an obi-style sash belt.",
+      details: [
+        "Water-resistant dense weave cotton gabardine",
+        "Exaggerated storm flap and deep raglan shoulder cut",
+        "Double-layer sash belt with tortoiseshell D-rings",
+        "Ventilated back yoke with silk bound interior seams",
+        "Hand-tailored in Kurunegala"
+      ],
+      inStock: true,
+      stockCount: 3
+    },
+    {
+      id: "mlk-m-03",
+      name: "Elysian Raw Silk Kimono Cardigan",
+      category: "men",
+      subCategory: "Knitwear & Layering",
+      edition: "Heritage Edition",
+      priceLKR: 27500,
+      badge: "NEW",
+      rating: 4.7,
+      reviewCount: 14,
+      featured: false,
+      material: "100% Raw Spun Matka Silk",
+      colorOptions: [
+        { name: "Chalk Oat", hex: "#EAE6DF", class: "chalk" },
+        { name: "Muted Blossom", hex: "#E0CAC7", class: "blossom" },
+        { name: "Coal Black", hex: "#1A1A1A", class: "black" }
+      ],
+      sizes: ["S-M (Relaxed)", "L-XL (Relaxed)"],
+      images: [
+        "https://images.unsplash.com/photo-1516257984-b1b4d707412e?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "Subtly textured Matka silk handwoven on traditional looms. An airy open-front silhouette designed to drape effortlessly over tees and trousers.",
+      details: [
+        "Textured raw slub silk with natural irregularities",
+        "Clean dropped shoulders and wide kimono sleeves",
+        "Hidden interior chest pocket for cards or phone",
+        "Breathable, lightweight, and seasonless",
+        "Atelier crafted in Kurunegala"
+      ],
+      inStock: true,
+      stockCount: 8
+    },
+    {
+      id: "mlk-a-03",
+      name: "Serenade Hand-Rolled Silk Scarf",
+      category: "accessories",
+      subCategory: "Scarves",
+      edition: "Atelier Art Series",
+      priceLKR: 13900,
+      badge: "POPULAR",
+      rating: 4.9,
+      reviewCount: 47,
+      featured: false,
+      material: "100% Island Silk Twill (16mm)",
+      colorOptions: [
+        { name: "Blush Flora", hex: "#ECCDCB", class: "blushflora" },
+        { name: "Ivory Minimalist", hex: "#F7F6F2", class: "ivory" }
+      ],
+      sizes: ["90cm x 90cm"],
+      images: [
+        "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1000&auto=format&fit=crop"
+      ],
+      description: "Original botanical watercolor prints inspired by the endemic flora of the Kurunegala Bathalagala rock fortress. Finished with meticulous hand-rolled edges.",
+      details: [
+        "Hand-rolled French hem hand-stitched over 4 hours",
+        "16mm heavyweight silk twill for structured folds",
+        "Vibrant eco-friendly archival dye print",
+        "Gift boxed in MoonLK embossed packaging",
+        "Handmade in Sri Lanka"
+      ],
+      inStock: true,
+      stockCount: 12
+    }
+  ],
+
+  lookbook: [
+    {
+      id: "look-01",
+      title: "Look 01: The Dawn of Solitude",
+      season: "Edition 04 / Spring-Summer",
+      image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1400&auto=format&fit=crop",
+      quote: "Linen shaped by morning breeze over the Kurunegala ridge.",
+      hotspots: [
+        {
+          x: 48,
+          y: 35,
+          productId: "mlk-w-02",
+          productName: "Sylvan Tailored Linen Blazer",
+          price: "LKR 28,900"
+        },
+        {
+          x: 52,
+          y: 72,
+          productId: "mlk-w-01",
+          productName: "Aura Silk Charmeuse Slip Gown",
+          price: "LKR 32,500"
+        }
+      ]
+    },
+    {
+      id: "look-02",
+      title: "Look 02: Architectural Ease",
+      season: "Edition 04 / Menswear",
+      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1400&auto=format&fit=crop",
+      quote: "Sharp tailoring meets tropical serenity in pure unbleached fiber.",
+      hotspots: [
+        {
+          x: 50,
+          y: 40,
+          productId: "mlk-m-01",
+          productName: "Ceylon Cuban Relaxed Camp Shirt",
+          price: "LKR 18,500"
+        },
+        {
+          x: 48,
+          y: 78,
+          productId: "mlk-m-02",
+          productName: "Atelier Pleated Tropical Trousers",
+          price: "LKR 24,500"
+        }
+      ]
+    },
+    {
+      id: "look-03",
+      title: "Look 03: The Evening Sculpture",
+      season: "Edition 04 / Haute Couture",
+      image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1400&auto=format&fit=crop",
+      quote: "Delicate organza catching the golden hour in the central province.",
+      hotspots: [
+        {
+          x: 45,
+          y: 45,
+          productId: "mlk-w-03",
+          productName: "Seraphina Organza Tiered Sundress",
+          price: "LKR 36,000"
+        },
+        {
+          x: 58,
+          y: 30,
+          productId: "mlk-a-02",
+          productName: "Solstice Sculpted Pink Quartz Choker",
+          price: "LKR 19,800"
+        }
+      ]
+    },
+    {
+      id: "look-04",
+      title: "Look 04: The Island Wanderer",
+      season: "Edition 04 / Resort",
+      image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1400&auto=format&fit=crop",
+      quote: "Modern silhouettes crafted for mindful wanderlust.",
+      hotspots: [
+        {
+          x: 52,
+          y: 55,
+          productId: "mlk-w-04",
+          productName: "Kandyan Sculpted Wrap Trench",
+          price: "LKR 44,000"
+        },
+        {
+          x: 38,
+          y: 70,
+          productId: "mlk-a-01",
+          productName: "The Luna Woven Raffia & Calfskin Tote",
+          price: "LKR 26,500"
+        }
+      ]
+    }
+  ],
+
+  journal: [
+    {
+      id: "journal-01",
+      slug: "architecture-of-sri-lankan-linen",
+      title: "The Architecture of Sri Lankan Linen: Breathability Meets Form",
+      category: "Fabric & Heritage",
+      date: "September 2026",
+      readTime: "4 min read",
+      image: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=900&auto=format&fit=crop",
+      excerpt: "How our Kurunegala atelier balances the humid tropical climate with structured silhouettes reminiscent of high Parisian couture."
+    },
+    {
+      id: "journal-02",
+      slug: "kurunegala-atelier-story",
+      title: "Inside the Kurunegala Atelier: Generational Hands, Modern Lines",
+      category: "Atelier Notes",
+      date: "August 2026",
+      readTime: "6 min read",
+      image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=900&auto=format&fit=crop",
+      excerpt: "Step behind our stone-walled workshop on Colombo Road where local master patternmakers translate island poetry into wearable art."
+    },
+    {
+      id: "journal-03",
+      slug: "sustainable-silk-dyeing",
+      title: "Botanical Blush: Natural Dye Formulations from Central Ceylon",
+      category: "Sustainability",
+      date: "July 2026",
+      readTime: "5 min read",
+      image: "https://images.unsplash.com/photo-1507553532144-b9df5e38c8d1?q=80&w=900&auto=format&fit=crop",
+      excerpt: "The chemistry behind our signature blush pink hue, derived from madder roots, hibiscus petals, and clean rainwater reservoirs."
+    }
+  ],
+
+  instagram: [
+    {
+      handle: "@moonlk_official",
+      likes: "1,420",
+      image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=600&auto=format&fit=crop",
+      caption: "Muted mornings in Kurunegala. Draped in Edition 04."
+    },
+    {
+      handle: "@moonlk_official",
+      likes: "982",
+      image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop",
+      caption: "Silk organza catching the dusk breeze."
+    },
+    {
+      handle: "@moonlk_official",
+      likes: "2,130",
+      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600&auto=format&fit=crop",
+      caption: "Menswear tailoring tailored for island humidity."
+    },
+    {
+      handle: "@moonlk_official",
+      likes: "1,754",
+      image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=600&auto=format&fit=crop",
+      caption: "Artisan woven palm totes, handcrafted with Italian calfskin."
+    },
+    {
+      handle: "@moonlk_official",
+      likes: "1,890",
+      image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
+      caption: "The Aura Slip Gown in Blush Champagne. Bespoke fittings available."
+    },
+    {
+      handle: "@moonlk_official",
+      likes: "1,240",
+      image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=600&auto=format&fit=crop",
+      caption: "Architectural lapels. Designed in Kurunegala, worn worldwide."
+    }
+  ]
+};
+
+
+/**
+ * MoonLK Clothing - Global Reactive State & Persistence
+ * Manages Cart, Wishlist, Currency, Filters, and LocalStorage
+ */
+
+class MoonLKState {
+  constructor() {
+    this.CART_KEY = "moonlk_cart_v1";
+    this.WISHLIST_KEY = "moonlk_wishlist_v1";
+    this.CURRENCY_KEY = "moonlk_currency_v1";
+    this.COUPON_KEY = "moonlk_coupon_v1";
+
+    this.freeShippingThresholdLKR = 25000;
+    this.validCoupons = {
+      "MOONLK10": { type: "percent", value: 0.10, label: "10% Atelier Welcome Privilege" },
+      "KURUNEGALA": { type: "percent", value: 0.15, label: "15% Flagship Special Privilege" },
+      "FREESHIP": { type: "shipping", value: 1.0, label: "Complimentary Express Island-wide Shipping" }
+    };
+
+    this.cart = this.loadCart();
+    this.wishlist = this.loadWishlist();
+    this.currency = this.loadCurrency();
+    this.activeCoupon = this.loadCoupon();
+
+    this.subscribers = [];
+  }
+
+  // State subscription pattern
+  subscribe(callback) {
+    this.subscribers.push(callback);
+  }
+
+  notify(event, payload) {
+    this.subscribers.forEach(cb => {
+      try {
+        cb(event, payload, this);
+      } catch (err) {
+        console.error("State listener error:", err);
+      }
+    });
+  }
+
+  // --- Currency Handling ---
+  loadCurrency() {
+    try {
+      return localStorage.getItem(this.CURRENCY_KEY) || "LKR";
+    } catch {
+      return "LKR";
+    }
+  }
+
+  setCurrency(curr) {
+    if (curr !== "LKR" && curr !== "USD") return;
+    this.currency = curr;
+    try {
+      localStorage.setItem(this.CURRENCY_KEY, curr);
+    } catch (e) {
+      console.warn("Storage warning:", e);
+    }
+    this.notify("currency_changed", { currency: curr });
+  }
+
+  formatPrice(priceLKR) {
+    if (this.currency === "USD") {
+      const usd = priceLKR * MOONLK_DATA.brand.currencyRateUSD;
+      return `${usd.toFixed(2)}`;
+    }
+    return `LKR ${priceLKR.toLocaleString("en-US")}`;
+  }
+
+  // --- Cart Handling ---
+  loadCart() {
+    try {
+      const stored = localStorage.getItem(this.CART_KEY);
+      return stored ? JSON.parse(stored) : [];
+    } catch (e) {
+      console.warn("Cart storage error:", e);
+      return [];
+    }
+  }
+
+  saveCart() {
+    try {
+      localStorage.setItem(this.CART_KEY, JSON.stringify(this.cart));
+    } catch (e) {
+      console.warn("Cart save error:", e);
+    }
+  }
+
+  addToCart(productId, size, color, quantity = 1) {
+    const product = MOONLK_DATA.products.find(p => p.id === productId);
+    if (!product) return { success: false, message: "Item not found" };
+
+    const selectedSize = size || product.sizes[0];
+    const selectedColor = color || (product.colorOptions[0] ? product.colorOptions[0].name : "Default");
+
+    const existingIndex = this.cart.findIndex(item => 
+      item.productId === productId && 
+      item.size === selectedSize && 
+      item.color === selectedColor
+    );
+
+    if (existingIndex > -1) {
+      this.cart[existingIndex].quantity += quantity;
+    } else {
+      this.cart.push({
+        id: `${productId}-${selectedSize}-${selectedColor}`.replace(/\s+/g, "_"),
+        productId,
+        name: product.name,
+        category: product.category,
+        priceLKR: product.priceLKR,
+        image: product.images[0],
+        size: selectedSize,
+        color: selectedColor,
+        quantity: quantity
+      });
+    }
+
+    this.saveCart();
+    this.notify("cart_updated", { cart: this.cart, addedProduct: product });
+    return { success: true, item: product };
+  }
+
+  updateCartQuantity(cartItemId, newQty) {
+    const item = this.cart.find(i => i.id === cartItemId);
+    if (!item) return;
+
+    if (newQty <= 0) {
+      this.removeFromCart(cartItemId);
+      return;
+    }
+
+    item.quantity = newQty;
+    this.saveCart();
+    this.notify("cart_updated", { cart: this.cart });
+  }
+
+  removeFromCart(cartItemId) {
+    this.cart = this.cart.filter(i => i.id !== cartItemId);
+    this.saveCart();
+    this.notify("cart_updated", { cart: this.cart });
+  }
+
+  clearCart() {
+    this.cart = [];
+    this.saveCart();
+    this.notify("cart_updated", { cart: this.cart });
+  }
+
+  getCartCount() {
+    return this.cart.reduce((sum, item) => sum + item.quantity, 0);
+  }
+
+  getCartSubtotalLKR() {
+    return this.cart.reduce((sum, item) => sum + (item.priceLKR * item.quantity), 0);
+  }
+
+  getCartShippingLKR() {
+    const subtotal = this.getCartSubtotalLKR();
+    if (subtotal === 0) return 0;
+    if (this.activeCoupon && this.activeCoupon.code === "FREESHIP") return 0;
+    if (subtotal >= this.freeShippingThresholdLKR) return 0;
+    return 1200; // Standard express Island-wide delivery in LKR
+  }
+
+  getCartDiscountLKR() {
+    const subtotal = this.getCartSubtotalLKR();
+    if (!this.activeCoupon || subtotal === 0) return 0;
+
+    if (this.activeCoupon.type === "percent") {
+      return Math.round(subtotal * this.activeCoupon.value);
+    }
+    return 0;
+  }
+
+  getCartTotalLKR() {
+    const subtotal = this.getCartSubtotalLKR();
+    if (subtotal === 0) return 0;
+    const discount = this.getCartDiscountLKR();
+    const shipping = this.getCartShippingLKR();
+    return Math.max(0, subtotal - discount + shipping);
+  }
+
+  // --- Coupon Logic ---
+  loadCoupon() {
+    try {
+      const code = localStorage.getItem(this.COUPON_KEY);
+      if (code && this.validCoupons[code]) {
+        return { code, ...this.validCoupons[code] };
+      }
+      return null;
+    } catch {
+      return null;
+    }
+  }
+
+  applyCoupon(code) {
+    const cleanCode = (code || "").trim().toUpperCase();
+    if (this.validCoupons[cleanCode]) {
+      this.activeCoupon = { code: cleanCode, ...this.validCoupons[cleanCode] };
+      try {
+        localStorage.setItem(this.COUPON_KEY, cleanCode);
+      } catch (e) {
+        console.warn(e);
+      }
+      this.notify("cart_updated", { cart: this.cart });
+      return { success: true, message: `Applied: ${this.activeCoupon.label}` };
+    }
+    return { success: false, message: "Invalid privilege or coupon code" };
+  }
+
+  removeCoupon() {
+    this.activeCoupon = null;
+    try {
+      localStorage.removeItem(this.COUPON_KEY);
+    } catch (e) {
+      console.warn(e);
+    }
+    this.notify("cart_updated", { cart: this.cart });
+  }
+
+  // --- Wishlist Handling ---
+  loadWishlist() {
+    try {
+      const stored = localStorage.getItem(this.WISHLIST_KEY);
+      return stored ? JSON.parse(stored) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  saveWishlist() {
+    try {
+      localStorage.setItem(this.WISHLIST_KEY, JSON.stringify(this.wishlist));
+    } catch (e) {
+      console.warn(e);
+    }
+  }
+
+  isInWishlist(productId) {
+    return this.wishlist.includes(productId);
+  }
+
+  toggleWishlist(productId) {
+    const exists = this.isInWishlist(productId);
+    if (exists) {
+      this.wishlist = this.wishlist.filter(id => id !== productId);
+    } else {
+      this.wishlist.push(productId);
+    }
+    this.saveWishlist();
+    this.notify("wishlist_updated", { 
+      wishlist: this.wishlist, 
+      productId, 
+      added: !exists 
+    });
+    return !exists;
+  }
+
+  getWishlistCount() {
+    return this.wishlist.length;
+  }
+
+  getWishlistProducts() {
+    return this.wishlist
+      .map(id => MOONLK_DATA.products.find(p => p.id === id))
+      .filter(Boolean);
+  }
+}
+
+// Global instance
+window.moonState = new MoonLKState();
+
+
+/**
+ * MoonLK Clothing - UI Micro-Interactions, Drawers, Modals & Toast Controller
+ */
+
+class MoonLKUI {
+  constructor() {
+    this.toastContainer = null;
+    this.initToastContainer();
+    this.bindGlobalEvents();
+  }
+
+  initToastContainer() {
+    let container = document.getElementById("toastContainer");
+    if (!container) {
+      container = document.createElement("div");
+      container.id = "toastContainer";
+      container.className = "toast-container";
+      document.body.appendChild(container);
+    }
+    this.toastContainer = container;
+  }
+
+  showToast(message, type = "success") {
+    const toast = document.createElement("div");
+    toast.className = "toast animate-fade-in";
+    
+    let iconSvg = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>`;
+    if (type === "wishlist") {
+      iconSvg = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>`;
+    } else if (type === "error") {
+      iconSvg = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`;
+    }
+
+    toast.innerHTML = `
+      <span class="toast-icon">${iconSvg}</span>
+      <span class="toast-text">${message}</span>
+    `;
+
+    this.toastContainer.appendChild(toast);
+
+    setTimeout(() => {
+      toast.style.opacity = "0";
+      toast.style.transform = "translateY(8px)";
+      setTimeout(() => toast.remove(), 400);
+    }, 3200);
+  }
+
+  // --- Drawer Management ---
+  openDrawer(drawerId) {
+    const drawer = document.getElementById(drawerId);
+    const overlay = document.getElementById("drawerOverlay");
+    if (!drawer || !overlay) return;
+
+    overlay.classList.add("active");
+    drawer.classList.add("active");
+    document.body.classList.add("lock-scroll");
+  }
+
+  closeAllDrawers() {
+    const drawers = document.querySelectorAll(".drawer, .mobile-nav-drawer");
+    const overlay = document.getElementById("drawerOverlay");
+    drawers.forEach(d => d.classList.remove("active"));
+    if (overlay) overlay.classList.remove("active");
+    document.body.classList.remove("lock-scroll");
+  }
+
+  // --- Modal Management ---
+  openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+    modal.classList.add("active");
+    document.body.classList.add("lock-scroll");
+  }
+
+  closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+    modal.classList.remove("active");
+    // Check if any other modal is open
+    const openModals = document.querySelectorAll(".modal-overlay.active");
+    if (openModals.length === 0) {
+      document.body.classList.remove("lock-scroll");
+    }
+  }
+
+  closeAllModals() {
+    const modals = document.querySelectorAll(".modal-overlay");
+    modals.forEach(m => m.classList.remove("active"));
+    document.body.classList.remove("lock-scroll");
+  }
+
+  // --- Global Event Bindings ---
+  bindGlobalEvents() {
+    // Sticky header detection
+    const header = document.querySelector(".site-header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 20) {
+        header?.classList.add("scrolled");
+      } else {
+        header?.classList.remove("scrolled");
+      }
+    });
+
+    // Close drawers when clicking overlay
+    const overlay = document.getElementById("drawerOverlay");
+    overlay?.addEventListener("click", () => this.closeAllDrawers());
+
+    // Close drawers with ESC
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        this.closeAllDrawers();
+        this.closeAllModals();
+      }
+    });
+
+    // Close modals on overlay backdrop click
+    document.querySelectorAll(".modal-overlay").forEach(overlay => {
+      overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) {
+          overlay.classList.remove("active");
+          document.body.classList.remove("lock-scroll");
+        }
+      });
+    });
+
+    // Accordions
+    document.addEventListener("click", (e) => {
+      const trigger = e.target.closest(".accordion-trigger");
+      if (trigger) {
+        const item = trigger.closest(".accordion-item");
+        const isOpen = item.classList.contains("open");
+        // Close siblings if desired
+        item.parentElement.querySelectorAll(".accordion-item").forEach(el => el.classList.remove("open"));
+        if (!isOpen) item.classList.add("open");
+      }
+    });
+  }
+}
+
+window.moonUI = new MoonLKUI();
+
+
+/**
+ * MoonLK Clothing - Catalog, Filtering, Search, Product Modals, and Cart Rendering
+ */
+
+class MoonLKShop {
+  constructor() {
+    this.currentCategory = "all";
+    this.currentSort = "featured";
+    this.searchQuery = "";
+    this.currentView = "grid"; // 'grid' (4-col) or 'editorial' (2-col)
+
+    this.selectedModalProduct = null;
+    this.selectedModalSize = null;
+    this.selectedModalColor = null;
+
+    this.init();
+  }
+
+  init() {
+    this.bindShopControls();
+    this.bindStateSync();
+  }
+
+  bindStateSync() {
+    // Listen to reactive state changes
+    window.moonState.subscribe((event, payload) => {
+      if (event === "cart_updated") {
+        this.renderCartDrawer();
+        this.updateHeaderCounters();
+      } else if (event === "wishlist_updated") {
+        this.renderWishlistDrawer();
+        this.updateWishlistIcons();
+        this.updateHeaderCounters();
+      } else if (event === "currency_changed") {
+        this.renderProducts();
+        this.renderCartDrawer();
+        this.renderWishlistDrawer();
+        if (this.selectedModalProduct) {
+          this.updateModalPrice();
+        }
+      }
+    });
+  }
+
+  bindShopControls() {
+    // Category tabs
+    document.querySelectorAll(".filter-pill").forEach(pill => {
+      pill.addEventListener("click", (e) => {
+        document.querySelectorAll(".filter-pill").forEach(p => p.classList.remove("active"));
+        pill.classList.add("active");
+        this.currentCategory = pill.dataset.category || "all";
+        this.renderProducts();
+      });
+    });
+
+    // Sorting dropdown
+    const sortSelect = document.getElementById("shopSortSelect");
+    sortSelect?.addEventListener("change", (e) => {
+      this.currentSort = e.target.value;
+      this.renderProducts();
+    });
+
+    // Grid vs Editorial view switcher
+    const viewGridBtn = document.getElementById("viewGridBtn");
+    const viewEditorialBtn = document.getElementById("viewEditorialBtn");
+    const productsContainer = document.getElementById("productsGrid");
+
+    viewGridBtn?.addEventListener("click", () => {
+      this.currentView = "grid";
+      viewGridBtn.classList.add("active");
+      viewEditorialBtn?.classList.remove("active");
+      productsContainer?.classList.remove("grid-view-editorial");
+    });
+
+    viewEditorialBtn?.addEventListener("click", () => {
+      this.currentView = "editorial";
+      viewEditorialBtn.classList.add("active");
+      viewGridBtn?.classList.remove("active");
+      productsContainer?.classList.add("grid-view-editorial");
+    });
+
+    // Live search input
+    const searchInputs = document.querySelectorAll(".live-search-input");
+    searchInputs.forEach(input => {
+      input.addEventListener("input", (e) => {
+        this.searchQuery = e.target.value.toLowerCase().trim();
+        this.renderProducts();
+      });
+    });
+
+    // Coupon code form in cart
+    const couponForm = document.getElementById("cartCouponForm");
+    couponForm?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const input = document.getElementById("couponInput");
+      if (!input) return;
+      const res = window.moonState.applyCoupon(input.value);
+      if (res.success) {
+        window.moonUI.showToast(res.message, "success");
+        input.value = "";
+      } else {
+        window.moonUI.showToast(res.message, "error");
+      }
+    });
+  }
+
+  // --- Filtering & Sorting Data Pipeline ---
+  getFilteredProducts() {
+    let list = [...MOONLK_DATA.products];
+
+    // Filter by category
+    if (this.currentCategory !== "all") {
+      list = list.filter(p => p.category === this.currentCategory);
+    }
+
+    // Filter by search query
+    if (this.searchQuery) {
+      list = list.filter(p => 
+        p.name.toLowerCase().includes(this.searchQuery) ||
+        p.material.toLowerCase().includes(this.searchQuery) ||
+        p.edition.toLowerCase().includes(this.searchQuery) ||
+        p.category.toLowerCase().includes(this.searchQuery) ||
+        p.description.toLowerCase().includes(this.searchQuery)
+      );
+    }
+
+    // Sorting
+    switch (this.currentSort) {
+      case "price-low":
+        list.sort((a, b) => a.priceLKR - b.priceLKR);
+        break;
+      case "price-high":
+        list.sort((a, b) => b.priceLKR - a.priceLKR);
+        break;
+      case "newest":
+        list.sort((a, b) => (b.badge === "NEW" || b.badge === "NEW ARRIVAL" ? 1 : -1));
+        break;
+      case "rating":
+        list.sort((a, b) => b.rating - a.rating);
+        break;
+      case "featured":
+      default:
+        list.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+        break;
+    }
+
+    return list;
+  }
+
+  // --- Render Products Grid ---
+  renderProducts() {
+    const container = document.getElementById("productsGrid");
+    if (!container) return;
+
+    const products = this.getFilteredProducts();
+
+    if (products.length === 0) {
+      container.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem;">
+          <h3 class="heading-card" style="margin-bottom: 0.5rem;">No Silhouettes Found</h3>
+          <p class="lead-text" style="font-size: 0.9375rem;">Try adjusting your filters or search keywords.</p>
+          <button class="btn btn-outline-dark" style="margin-top: 1.5rem;" onclick="moonShop.resetFilters()">Reset All Filters</button>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = products.map(product => this.createProductCardHTML(product)).join("");
+    this.bindCardInteractions();
+  }
+
+  resetFilters() {
+    this.currentCategory = "all";
+    this.searchQuery = "";
+    document.querySelectorAll(".filter-pill").forEach(p => {
+      p.classList.toggle("active", p.dataset.category === "all");
+    });
+    document.querySelectorAll(".live-search-input").forEach(i => i.value = "");
+    this.renderProducts();
+  }
+
+  createProductCardHTML(product) {
+    const isInWishlist = window.moonState.isInWishlist(product.id);
+    const formattedPrice = window.moonState.formatPrice(product.priceLKR);
+    const secondaryImg = product.images[1] || product.images[0];
+
+    // Status badge class
+    let badgeClass = "badge-new";
+    if (product.badge === "BESTSELLER") badgeClass = "badge-bestseller";
+    if (product.badge === "LIMITED" || product.badge === "LIMITED EDITION") badgeClass = "badge-limited";
+    if (product.badge === "ATELIER EXCLUSIVE" || product.badge === "RUNWAY PIECE") badgeClass = "badge-exclusive";
+
+    // Swatches HTML
+    const swatchesHTML = product.colorOptions.map(c => `
+      <span class="swatch-dot" style="background-color: ${c.hex};" title="${c.name}"></span>
+    `).join("");
+
+    // Quick add size pills HTML
+    const sizePillsHTML = product.sizes.map(size => `
+      <button class="size-pill-btn" data-product-id="${product.id}" data-size="${size}">${size}</button>
+    `).join("");
+
+    return `
+      <article class="product-card" data-product-id="${product.id}">
+        <div class="product-card-media">
+          ${product.badge ? `<span class="badge ${badgeClass} product-card-badge">${product.badge}</span>` : ""}
+          <button class="product-card-wishlist ${isInWishlist ? "active" : ""}" data-wishlist-id="${product.id}" title="Save to Wishlist" aria-label="Save to Wishlist">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="${isInWishlist ? "currentColor" : "none"}" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </button>
+
+          <img class="product-card-image" src="${product.images[0]}" alt="${product.name}" loading="lazy">
+          <img class="product-card-image-secondary" src="${secondaryImg}" alt="${product.name}" loading="lazy">
+
+          <div class="product-card-quick-add">
+            <span class="quick-add-sizes-title">Quick Add Size</span>
+            <div class="quick-add-sizes">
+              ${sizePillsHTML}
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card-body">
+          <span class="product-card-category">${product.category} · ${product.subCategory}</span>
+          <h3 class="product-card-title" data-open-modal="${product.id}">${product.name}</h3>
+          <div class="product-card-pricing">
+            <span class="product-card-price">${formattedPrice}</span>
+          </div>
+          <div class="product-card-swatches">
+            ${swatchesHTML}
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
+  bindCardInteractions() {
+    // Open product modal when clicking card image or title
+    document.querySelectorAll(".product-card-media, [data-open-modal]").forEach(el => {
+      el.addEventListener("click", (e) => {
+        // If clicking on quick-add size pill or wishlist button, don't trigger modal
+        if (e.target.closest(".product-card-wishlist") || e.target.closest(".size-pill-btn")) return;
+        
+        const card = el.closest(".product-card");
+        const productId = card?.dataset.productId;
+        if (productId) this.openProductModal(productId);
+      });
+    });
+
+    // Wishlist heart clicks on card
+    document.querySelectorAll(".product-card-wishlist").forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const id = btn.dataset.wishlistId;
+        const added = window.moonState.toggleWishlist(id);
+        const product = MOONLK_DATA.products.find(p => p.id === id);
+        window.moonUI.showToast(
+          added ? `Saved "${product?.name}" to your wishlist.` : `Removed from wishlist.`,
+          added ? "wishlist" : "info"
+        );
+      });
+    });
+
+    // Quick-Add size pill clicks
+    document.querySelectorAll(".size-pill-btn").forEach(pill => {
+      pill.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const productId = pill.dataset.productId;
+        const size = pill.dataset.size;
+        const res = window.moonState.addToCart(productId, size);
+        if (res.success) {
+          window.moonUI.showToast(`Added ${res.item.name} (${size}) to Bag`, "success");
+          window.moonUI.openDrawer("cartDrawer");
+        }
+      });
+    });
+  }
+
+  // --- Product Detail Modal ---
+  openProductModal(productId) {
+    const product = MOONLK_DATA.products.find(p => p.id === productId);
+    if (!product) return;
+
+    this.selectedModalProduct = product;
+    this.selectedModalSize = product.sizes[0];
+    this.selectedModalColor = product.colorOptions[0] ? product.colorOptions[0].name : "Default";
+
+    const modal = document.getElementById("productModal");
+    if (!modal) return;
+
+    // Set Gallery
+    const mainImg = modal.querySelector(".product-modal-main-img img");
+    const thumbsContainer = modal.querySelector(".product-modal-thumbs");
+    if (mainImg) mainImg.src = product.images[0];
+    if (thumbsContainer) {
+      thumbsContainer.innerHTML = product.images.map((img, idx) => `
+        <div class="thumb-item ${idx === 0 ? "active" : ""}" data-thumb-src="${img}">
+          <img src="${img}" alt="${product.name} angle ${idx + 1}">
+        </div>
+      `).join("");
+
+      // Bind thumbnail clicks
+      thumbsContainer.querySelectorAll(".thumb-item").forEach(thumb => {
+        thumb.addEventListener("click", () => {
+          thumbsContainer.querySelectorAll(".thumb-item").forEach(t => t.classList.remove("active"));
+          thumb.classList.add("active");
+          if (mainImg) mainImg.src = thumb.dataset.thumbSrc;
+        });
+      });
+    }
+
+    // Set Details
+    const editionEl = modal.querySelector(".product-modal-edition");
+    const titleEl = modal.querySelector(".product-modal-title");
+    const descEl = modal.querySelector(".product-modal-desc");
+    const priceEl = modal.querySelector(".product-modal-price");
+
+    if (editionEl) editionEl.textContent = `${product.edition} · Kurunegala Atelier`;
+    if (titleEl) titleEl.textContent = product.name;
+    if (descEl) descEl.textContent = product.description;
+    if (priceEl) priceEl.textContent = window.moonState.formatPrice(product.priceLKR);
+
+    // Color Swatches
+    const colorContainer = modal.querySelector(".modal-colors-wrap");
+    const colorLabel = modal.querySelector(".modal-selected-color-name");
+    if (colorLabel) colorLabel.textContent = this.selectedModalColor;
+    if (colorContainer) {
+      colorContainer.innerHTML = product.colorOptions.map((c, idx) => `
+        <button class="color-option-btn ${idx === 0 ? "selected" : ""}" 
+                style="background-color: ${c.hex};" 
+                data-color-name="${c.name}" 
+                title="${c.name}"></button>
+      `).join("");
+
+      colorContainer.querySelectorAll(".color-option-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          colorContainer.querySelectorAll(".color-option-btn").forEach(b => b.classList.remove("selected"));
+          btn.classList.add("selected");
+          this.selectedModalColor = btn.dataset.colorName;
+          if (colorLabel) colorLabel.textContent = this.selectedModalColor;
+        });
+      });
+    }
+
+    // Sizes
+    const sizeContainer = modal.querySelector(".modal-sizes-wrap");
+    if (sizeContainer) {
+      sizeContainer.innerHTML = product.sizes.map((s, idx) => `
+        <button class="size-btn ${idx === 0 ? "selected" : ""}" data-size-val="${s}">${s}</button>
+      `).join("");
+
+      sizeContainer.querySelectorAll(".size-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          sizeContainer.querySelectorAll(".size-btn").forEach(b => b.classList.remove("selected"));
+          btn.classList.add("selected");
+          this.selectedModalSize = btn.dataset.sizeVal;
+        });
+      });
+    }
+
+    // Fabric details bullets
+    const craftUl = modal.querySelector(".product-modal-craftsmanship-list");
+    if (craftUl && product.details) {
+      craftUl.innerHTML = product.details.map(d => `<li>• ${d}</li>`).join("");
+    }
+
+    // Material spec
+    const matEl = modal.querySelector(".product-modal-material-name");
+    if (matEl) matEl.textContent = product.material;
+
+    // Stock warning
+    const stockEl = modal.querySelector(".modal-stock-indicator");
+    if (stockEl) {
+      stockEl.textContent = product.stockCount <= 5 
+        ? `Rare silhouette — Only ${product.stockCount} left in Kurunegala Atelier` 
+        : `In Stock at Kurunegala Flagship & Ready for Island-wide Dispatch`;
+    }
+
+    // Add to Bag Button
+    const addBtn = modal.querySelector(".modal-add-bag-btn");
+    if (addBtn) {
+      addBtn.onclick = () => {
+        const res = window.moonState.addToCart(
+          product.id, 
+          this.selectedModalSize, 
+          this.selectedModalColor
+        );
+        if (res.success) {
+          window.moonUI.showToast(`Added ${res.item.name} (${this.selectedModalSize}) to Bag`, "success");
+          window.moonUI.closeModal("productModal");
+          window.moonUI.openDrawer("cartDrawer");
+        }
+      };
+    }
+
+    // Buy Now Button (Direct checkout)
+    const buyNowBtn = modal.querySelector(".modal-buy-now-btn");
+    if (buyNowBtn) {
+      buyNowBtn.onclick = () => {
+        window.moonState.addToCart(
+          product.id, 
+          this.selectedModalSize, 
+          this.selectedModalColor
+        );
+        window.moonUI.closeModal("productModal");
+        window.moonCheckout.openCheckout();
+      };
+    }
+
+    window.moonUI.openModal("productModal");
+  }
+
+  updateModalPrice() {
+    if (!this.selectedModalProduct) return;
+    const modal = document.getElementById("productModal");
+    const priceEl = modal?.querySelector(".product-modal-price");
+    if (priceEl) {
+      priceEl.textContent = window.moonState.formatPrice(this.selectedModalProduct.priceLKR);
+    }
+  }
+
+  // --- Render Cart Drawer ---
+  renderCartDrawer() {
+    const listContainer = document.getElementById("cartItemsList");
+    const emptyState = document.getElementById("cartEmptyState");
+    const footer = document.getElementById("cartFooter");
+    const countBadge = document.getElementById("cartHeaderCount");
+    const shippingMeter = document.getElementById("cartShippingProgressBox");
+
+    if (!listContainer) return;
+
+    const cart = window.moonState.cart;
+    const totalCount = window.moonState.getCartCount();
+
+    if (countBadge) countBadge.textContent = `${totalCount} item${totalCount === 1 ? "" : "s"}`;
+
+    if (cart.length === 0) {
+      listContainer.innerHTML = "";
+      listContainer.style.display = "none";
+      if (emptyState) emptyState.style.display = "flex";
+      if (footer) footer.style.display = "none";
+      if (shippingMeter) shippingMeter.style.display = "none";
+      return;
+    }
+
+    listContainer.style.display = "flex";
+    if (emptyState) emptyState.style.display = "none";
+    if (footer) footer.style.display = "flex";
+    if (shippingMeter) shippingMeter.style.display = "block";
+
+    // Free Shipping Progress Calculation
+    const subtotal = window.moonState.getCartSubtotalLKR();
+    const threshold = window.moonState.freeShippingThresholdLKR;
+    const remaining = Math.max(0, threshold - subtotal);
+    const percent = Math.min(100, Math.round((subtotal / threshold) * 100));
+
+    const progressFill = document.getElementById("cartShippingFill");
+    const progressText = document.getElementById("cartShippingText");
+
+    if (progressFill) progressFill.style.width = `${percent}%`;
+    if (progressText) {
+      if (remaining === 0 || (window.moonState.activeCoupon && window.moonState.activeCoupon.code === "FREESHIP")) {
+        progressText.innerHTML = `<strong>✨ You've unlocked Complimentary Island-wide Express Delivery!</strong>`;
+      } else {
+        progressText.innerHTML = `Add <strong>${window.moonState.formatPrice(remaining)}</strong> more for Complimentary Island-wide Delivery`;
+      }
+    }
+
+    // Line items HTML
+    listContainer.innerHTML = cart.map(item => `
+      <div class="cart-item" data-cart-item-id="${item.id}">
+        <div class="cart-item-image">
+          <img src="${item.image}" alt="${item.name}">
+        </div>
+        <div class="cart-item-info">
+          <div class="cart-item-header">
+            <div>
+              <h4 class="cart-item-title">${item.name}</h4>
+              <p class="cart-item-meta">${item.size} · ${item.color}</p>
+            </div>
+            <button class="cart-item-delete" data-remove-item="${item.id}" title="Remove item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          </div>
+          <div class="cart-item-bottom">
+            <div class="qty-control">
+              <button class="qty-btn" data-qty-change="-1" data-cart-id="${item.id}">-</button>
+              <span class="qty-value">${item.quantity}</span>
+              <button class="qty-btn" data-qty-change="1" data-cart-id="${item.id}">+</button>
+            </div>
+            <span class="cart-item-price">${window.moonState.formatPrice(item.priceLKR * item.quantity)}</span>
+          </div>
+        </div>
+      </div>
+    `).join("");
+
+    // Bind item quantity & remove buttons
+    listContainer.querySelectorAll("[data-qty-change]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.cartId;
+        const delta = parseInt(btn.dataset.qtyChange, 10);
+        const current = cart.find(i => i.id === id);
+        if (current) {
+          window.moonState.updateCartQuantity(id, current.quantity + delta);
+        }
+      });
+    });
+
+    listContainer.querySelectorAll("[data-remove-item]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        window.moonState.removeFromCart(btn.dataset.removeItem);
+        window.moonUI.showToast("Item removed from Bag", "info");
+      });
+    });
+
+    // Totals Breakdown
+    const subtotalEl = document.getElementById("cartSubtotalVal");
+    const discountEl = document.getElementById("cartDiscountVal");
+    const discountRow = document.getElementById("cartDiscountRow");
+    const shippingEl = document.getElementById("cartShippingVal");
+    const grandTotalEl = document.getElementById("cartGrandTotalVal");
+    const couponPillWrap = document.getElementById("cartActiveCouponWrap");
+
+    if (subtotalEl) subtotalEl.textContent = window.moonState.formatPrice(subtotal);
+
+    const discount = window.moonState.getCartDiscountLKR();
+    if (discount > 0 && discountRow && discountEl) {
+      discountRow.style.display = "flex";
+      discountEl.textContent = `-${window.moonState.formatPrice(discount)}`;
+    } else if (discountRow) {
+      discountRow.style.display = "none";
+    }
+
+    const shipping = window.moonState.getCartShippingLKR();
+    if (shippingEl) {
+      shippingEl.textContent = shipping === 0 ? "Complimentary" : window.moonState.formatPrice(shipping);
+    }
+
+    if (grandTotalEl) {
+      grandTotalEl.textContent = window.moonState.formatPrice(window.moonState.getCartTotalLKR());
+    }
+
+    // Coupon pill
+    if (couponPillWrap) {
+      if (window.moonState.activeCoupon) {
+        couponPillWrap.innerHTML = `
+          <div class="applied-coupon-pill">
+            <span>Privilege Applied: <strong>${window.moonState.activeCoupon.code}</strong> (${window.moonState.activeCoupon.label})</span>
+            <button class="btn-text" style="font-size:0.65rem;" onclick="window.moonState.removeCoupon()">Remove</button>
+          </div>
+        `;
+      } else {
+        couponPillWrap.innerHTML = "";
+      }
+    }
+  }
+
+  // --- Render Wishlist Drawer ---
+  renderWishlistDrawer() {
+    const container = document.getElementById("wishlistItemsList");
+    const emptyState = document.getElementById("wishlistEmptyState");
+    const countBadge = document.getElementById("wishlistHeaderCount");
+    if (!container) return;
+
+    const items = window.moonState.getWishlistProducts();
+    if (countBadge) countBadge.textContent = `${items.length} piece${items.length === 1 ? "" : "s"}`;
+
+    if (items.length === 0) {
+      container.innerHTML = "";
+      container.style.display = "none";
+      if (emptyState) emptyState.style.display = "flex";
+      return;
+    }
+
+    container.style.display = "flex";
+    if (emptyState) emptyState.style.display = "none";
+
+    container.innerHTML = items.map(product => `
+      <div class="cart-item" data-wishlist-item-id="${product.id}">
+        <div class="cart-item-image">
+          <img src="${product.images[0]}" alt="${product.name}">
+        </div>
+        <div class="cart-item-info">
+          <div class="cart-item-header">
+            <div>
+              <h4 class="cart-item-title">${product.name}</h4>
+              <p class="cart-item-meta">${product.category} · ${product.material}</p>
+            </div>
+            <button class="cart-item-delete" data-remove-wishlist="${product.id}" title="Remove">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          </div>
+          <div class="cart-item-bottom">
+            <span class="cart-item-price">${window.moonState.formatPrice(product.priceLKR)}</span>
+            <button class="btn btn-sm btn-dark" data-move-to-bag="${product.id}">Move to Bag</button>
+          </div>
+        </div>
+      </div>
+    `).join("");
+
+    container.querySelectorAll("[data-remove-wishlist]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        window.moonState.toggleWishlist(btn.dataset.removeWishlist);
+      });
+    });
+
+    container.querySelectorAll("[data-move-to-bag]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const id = btn.dataset.moveToBag;
+        window.moonState.addToCart(id);
+        window.moonState.toggleWishlist(id);
+        window.moonUI.showToast("Piece moved to your Bag", "success");
+        window.moonUI.openDrawer("cartDrawer");
+      });
+    });
+  }
+
+  updateHeaderCounters() {
+    const cartCount = window.moonState.getCartCount();
+    const wishCount = window.moonState.getWishlistCount();
+
+    document.querySelectorAll(".cart-count-badge").forEach(el => {
+      el.textContent = cartCount;
+      el.style.display = cartCount > 0 ? "flex" : "none";
+    });
+
+    document.querySelectorAll(".wishlist-count-badge").forEach(el => {
+      el.textContent = wishCount;
+      el.style.display = wishCount > 0 ? "flex" : "none";
+    });
+  }
+
+  updateWishlistIcons() {
+    document.querySelectorAll(".product-card-wishlist").forEach(btn => {
+      const id = btn.dataset.wishlistId;
+      const isFav = window.moonState.isInWishlist(id);
+      btn.classList.toggle("active", isFav);
+      const svg = btn.querySelector("svg");
+      if (svg) svg.setAttribute("fill", isFav ? "currentColor" : "none");
+    });
+  }
+}
+
+window.moonShop = new MoonLKShop();
+
+
+/**
+ * MoonLK Clothing - Multi-Step Luxury Checkout Controller
+ * Kurunegala, Sri Lanka
+ */
+
+class MoonLKCheckout {
+  constructor() {
+    this.currentStep = 1;
+    this.orderData = {
+      customer: {},
+      shippingMethod: "islandwide",
+      paymentMethod: "cod",
+      items: [],
+      totals: {}
+    };
+
+    this.init();
+  }
+
+  init() {
+    this.bindEvents();
+  }
+
+  bindEvents() {
+    // Checkout trigger from cart drawer
+    const proceedBtn = document.getElementById("cartCheckoutBtn");
+    proceedBtn?.addEventListener("click", () => {
+      window.moonUI.closeAllDrawers();
+      this.openCheckout();
+    });
+
+    // Form submission / step navigation
+    const checkoutForm = document.getElementById("checkoutForm");
+    checkoutForm?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      this.handleNextStep();
+    });
+
+    // Delivery option change updates totals
+    document.querySelectorAll("input[name='checkoutDelivery']").forEach(radio => {
+      radio.addEventListener("change", (e) => {
+        this.orderData.shippingMethod = e.target.value;
+        this.updateCheckoutSummary();
+      });
+    });
+
+    // Payment option selection
+    document.querySelectorAll("input[name='checkoutPayment']").forEach(radio => {
+      radio.addEventListener("change", (e) => {
+        this.orderData.paymentMethod = e.target.value;
+        // Toggle credit card fields if card is selected
+        const cardFields = document.getElementById("creditCardFields");
+        if (cardFields) {
+          cardFields.style.display = e.target.value === "card" ? "grid" : "none";
+        }
+      });
+    });
+  }
+
+  openCheckout() {
+    if (window.moonState.cart.length === 0) {
+      window.moonUI.showToast("Your Bag is currently empty.", "error");
+      return;
+    }
+
+    this.currentStep = 1;
+    this.goToStep(1);
+    this.updateCheckoutSummary();
+    window.moonUI.openModal("checkoutModal");
+  }
+
+  goToStep(stepNum) {
+    this.currentStep = stepNum;
+
+    // Update Step Indicators
+    document.querySelectorAll(".checkout-step-indicator").forEach(ind => {
+      const step = parseInt(ind.dataset.step, 10);
+      ind.classList.toggle("active", step === stepNum);
+      ind.classList.toggle("completed", step < stepNum);
+    });
+
+    // Update Step Panels
+    document.querySelectorAll(".checkout-step-panel").forEach(panel => {
+      const step = parseInt(panel.dataset.step, 10);
+      panel.style.display = step === stepNum ? "block" : "none";
+    });
+
+    // Modal Title update
+    const modalTitle = document.getElementById("checkoutModalTitle");
+    if (modalTitle) {
+      if (stepNum === 1) modalTitle.textContent = "1. Customer & Delivery Address";
+      else if (stepNum === 2) modalTitle.textContent = "2. Delivery Method";
+      else if (stepNum === 3) modalTitle.textContent = "3. Payment Selection";
+      else if (stepNum === 4) modalTitle.textContent = "Order Confirmed & Atelier Receipt";
+    }
+  }
+
+  handleNextStep() {
+    if (this.currentStep === 1) {
+      // Validate customer fields
+      const firstName = document.getElementById("checkoutFirstName")?.value.trim();
+      const lastName = document.getElementById("checkoutLastName")?.value.trim();
+      const email = document.getElementById("checkoutEmail")?.value.trim();
+      const phone = document.getElementById("checkoutPhone")?.value.trim();
+      const address = document.getElementById("checkoutAddress")?.value.trim();
+      const city = document.getElementById("checkoutCity")?.value.trim();
+      const district = document.getElementById("checkoutDistrict")?.value;
+
+      if (!firstName || !lastName || !email || !phone || !address || !city) {
+        window.moonUI.showToast("Please fill in all required shipping fields.", "error");
+        return;
+      }
+
+      this.orderData.customer = { firstName, lastName, email, phone, address, city, district };
+      this.goToStep(2);
+    } else if (this.currentStep === 2) {
+      this.goToStep(3);
+    } else if (this.currentStep === 3) {
+      // Place Order
+      this.completeOrder();
+    }
+  }
+
+  updateCheckoutSummary() {
+    const listEl = document.getElementById("checkoutItemsSummary");
+    const subtotalEl = document.getElementById("checkoutSubtotalVal");
+    const shippingEl = document.getElementById("checkoutShippingVal");
+    const discountEl = document.getElementById("checkoutDiscountVal");
+    const discountRow = document.getElementById("checkoutDiscountRow");
+    const totalEl = document.getElementById("checkoutGrandTotalVal");
+
+    const cart = window.moonState.cart;
+    if (listEl) {
+      listEl.innerHTML = cart.map(item => `
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8125rem; margin-bottom: 0.6rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <img src="${item.image}" style="width:36px; height:48px; object-fit:cover; border-radius:2px;" alt="${item.name}">
+            <div>
+              <div style="font-weight:600; color:var(--color-charcoal-900);">${item.name}</div>
+              <div style="font-size:0.7rem; color:var(--color-charcoal-600);">${item.size} · ${item.color} · Qty: ${item.quantity}</div>
+            </div>
+          </div>
+          <span style="font-weight:600;">${window.moonState.formatPrice(item.priceLKR * item.quantity)}</span>
+        </div>
+      `).join("");
+    }
+
+    const subtotal = window.moonState.getCartSubtotalLKR();
+    let shipping = window.moonState.getCartShippingLKR();
+
+    if (this.orderData.shippingMethod === "pickup") {
+      shipping = 0; // Free pickup at Kurunegala store
+    } else if (this.orderData.shippingMethod === "international") {
+      shipping = 8500; // DHL International Express
+    }
+
+    const discount = window.moonState.getCartDiscountLKR();
+    const grandTotal = Math.max(0, subtotal - discount + shipping);
+
+    if (subtotalEl) subtotalEl.textContent = window.moonState.formatPrice(subtotal);
+    if (shippingEl) shippingEl.textContent = shipping === 0 ? "Complimentary" : window.moonState.formatPrice(shipping);
+    
+    if (discountRow && discountEl) {
+      if (discount > 0) {
+        discountRow.style.display = "flex";
+        discountEl.textContent = `-${window.moonState.formatPrice(discount)}`;
+      } else {
+        discountRow.style.display = "none";
+      }
+    }
+
+    if (totalEl) totalEl.textContent = window.moonState.formatPrice(grandTotal);
+
+    this.orderData.totals = { subtotal, shipping, discount, grandTotal };
+  }
+
+  completeOrder() {
+    const orderNumber = `MLK-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
+    const orderDate = new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+    
+    this.orderData.orderNumber = orderNumber;
+    this.orderData.orderDate = orderDate;
+    this.orderData.items = [...window.moonState.cart];
+
+    // Populate confirmation step
+    const orderNumEl = document.getElementById("confirmOrderNumber");
+    const orderNameEl = document.getElementById("confirmCustomerName");
+    const orderEmailEl = document.getElementById("confirmCustomerEmail");
+    const orderDestEl = document.getElementById("confirmDeliveryDestination");
+    const orderPaymentMethodEl = document.getElementById("confirmPaymentMethod");
+    const orderTotalEl = document.getElementById("confirmOrderTotal");
+
+    if (orderNumEl) orderNumEl.textContent = orderNumber;
+    if (orderNameEl) orderNameEl.textContent = `${this.orderData.customer.firstName} ${this.orderData.customer.lastName}`;
+    if (orderEmailEl) orderEmailEl.textContent = this.orderData.customer.email;
+    if (orderDestEl) {
+      if (this.orderData.shippingMethod === "pickup") {
+        orderDestEl.textContent = "Self-Pickup at MoonLK Flagship Atelier, 48 Colombo Road, Kurunegala";
+      } else {
+        orderDestEl.textContent = `${this.orderData.customer.address}, ${this.orderData.customer.city} (${this.orderData.customer.district || "Sri Lanka"})`;
+      }
+    }
+
+    if (orderPaymentMethodEl) {
+      const labels = {
+        "cod": "Cash on Delivery / Bank Transfer upon delivery",
+        "card": "Credit / Debit Card (Processed Securely)",
+        "koko": "Koko / Mintpay 3-Month Interest-Free Installments",
+        "bank": "Direct Atelier Bank Transfer"
+      };
+      orderPaymentMethodEl.textContent = labels[this.orderData.paymentMethod] || "Standard Payment";
+    }
+
+    if (orderTotalEl) {
+      orderTotalEl.textContent = window.moonState.formatPrice(this.orderData.totals.grandTotal);
+    }
+
+    // Go to step 4
+    this.goToStep(4);
+
+    // Clear cart in state
+    window.moonState.clearCart();
+    window.moonUI.showToast(`Order ${orderNumber} placed successfully!`, "success");
+  }
+
+  printReceipt() {
+    window.print();
+  }
+}
+
+window.moonCheckout = new MoonLKCheckout();
+
+
+/**
+ * MoonLK Clothing - Main Application Entry & Page Orchestration
+ * Kurunegala, Sri Lanka
+ */
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Initial Render of Products Grid
+  window.moonShop.renderProducts();
+  window.moonShop.renderCartDrawer();
+  window.moonShop.renderWishlistDrawer();
+  window.moonShop.updateHeaderCounters();
+  window.moonShop.updateWishlistIcons();
+
+  // 2. Initialize Lookbook
+  initLookbook();
+
+  // 3. Initialize Journal
+  initJournal();
+
+  // 4. Initialize Instagram Feed
+  initInstagram();
+
+  // 5. Initialize Atelier Flagship Appointment Booking
+  initAtelierBooking();
+
+  // 6. Initialize Newsletter VIP Club
+  initNewsletter();
+
+  // 7. Initialize Currency Toggle
+  initCurrencyControls();
+
+  // 8. Initialize Quick Search & Shortcuts
+  initSearch();
+
+  // 9. Initialize Size Guide Modal
+  initSizeGuide();
+
+  // 10. Bind Drawer & Navigation Triggers
+  bindGlobalNavTriggers();
+});
+
+// --- Lookbook Interactive Spread ---
+let currentLookIndex = 0;
+
+function initLookbook() {
+  renderCurrentLook();
+
+  const prevBtn = document.getElementById("lookbookPrevBtn");
+  const nextBtn = document.getElementById("lookbookNextBtn");
+
+  prevBtn?.addEventListener("click", () => {
+    currentLookIndex = (currentLookIndex - 1 + MOONLK_DATA.lookbook.length) % MOONLK_DATA.lookbook.length;
+    renderCurrentLook();
+  });
+
+  nextBtn?.addEventListener("click", () => {
+    currentLookIndex = (currentLookIndex + 1) % MOONLK_DATA.lookbook.length;
+    renderCurrentLook();
+  });
+}
+
+function renderCurrentLook() {
+  const look = MOONLK_DATA.lookbook[currentLookIndex];
+  if (!look) return;
+
+  const titleEl = document.getElementById("lookbookTitle");
+  const seasonEl = document.getElementById("lookbookSeason");
+  const quoteEl = document.getElementById("lookbookQuote");
+  const imgEl = document.getElementById("lookbookMainImage");
+  const hotspotsContainer = document.getElementById("lookbookHotspots");
+  const counterEl = document.getElementById("lookbookCounter");
+
+  if (titleEl) titleEl.textContent = look.title;
+  if (seasonEl) seasonEl.textContent = look.season;
+  if (quoteEl) quoteEl.textContent = `“${look.quote}”`;
+  if (imgEl) imgEl.src = look.image;
+  if (counterEl) counterEl.textContent = `0${currentLookIndex + 1} / 0${MOONLK_DATA.lookbook.length}`;
+
+  // Hotspots rendering
+  if (hotspotsContainer) {
+    hotspotsContainer.innerHTML = look.hotspots.map((spot, i) => `
+      <div class="hotspot-pin" style="top: ${spot.y}%; left: ${spot.x}%;" data-product-id="${spot.productId}">
+        ${i + 1}
+        <div class="hotspot-tooltip">
+          <div class="hotspot-tooltip-title">${spot.productName}</div>
+          <div class="hotspot-tooltip-price">${spot.price} · View Piece</div>
+        </div>
+      </div>
+    `).join("");
+
+    hotspotsContainer.querySelectorAll(".hotspot-pin").forEach(pin => {
+      pin.addEventListener("click", () => {
+        const prodId = pin.dataset.productId;
+        if (prodId) window.moonShop.openProductModal(prodId);
+      });
+    });
+  }
+}
+
+// --- Atelier Journal ---
+function initJournal() {
+  const container = document.getElementById("journalGrid");
+  if (!container) return;
+
+  container.innerHTML = MOONLK_DATA.journal.map(post => `
+    <article class="journal-card">
+      <div class="journal-card-media">
+        <img src="${post.image}" alt="${post.title}" loading="lazy">
+      </div>
+      <div class="journal-card-body">
+        <div class="journal-meta">
+          <span class="journal-category">${post.category}</span>
+          <span>${post.date} · ${post.readTime}</span>
+        </div>
+        <h4 class="journal-title">${post.title}</h4>
+        <p class="journal-excerpt">${post.excerpt}</p>
+        <button class="btn-text" style="align-self: flex-start; margin-top: auto;" onclick="openJournalModal('${post.id}')">Read Essay →</button>
+      </div>
+    </article>
+  `).join("");
+}
+
+function openJournalModal(journalId) {
+  const post = MOONLK_DATA.journal.find(j => j.id === journalId);
+  if (!post) return;
+
+  const modal = document.getElementById("journalModal");
+  if (!modal) return;
+
+  modal.querySelector(".journal-modal-category").textContent = post.category;
+  modal.querySelector(".journal-modal-title").textContent = post.title;
+  modal.querySelector(".journal-modal-date").textContent = `${post.date} · ${post.readTime}`;
+  modal.querySelector(".journal-modal-image").src = post.image;
+  modal.querySelector(".journal-modal-body-text").innerHTML = `
+    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-charcoal-700); margin-bottom: 1.25rem;">${post.excerpt}</p>
+    <p style="line-height: 1.75; color: var(--color-charcoal-600); margin-bottom: 1.25rem;">
+      In our Kurunegala workshop nestled near the historic rock ramparts, our patternmakers adhere to a quiet rhythm.
+      We believe true luxury is tactile and patient: hand-spun organic threads, natural botanical softening baths, and minimal seams that breathe alongside the human form.
+    </p>
+    <p style="line-height: 1.75; color: var(--color-charcoal-600);">
+      Every piece crafted for MoonLK carries this intention. An understated elegance rooted in the soil of Sri Lanka, made for modern wanderers everywhere.
+    </p>
+  `;
+
+  window.moonUI.openModal("journalModal");
+}
+window.openJournalModal = openJournalModal;
+
+// --- Instagram Community Feed ---
+function initInstagram() {
+  const container = document.getElementById("instaGrid");
+  if (!container) return;
+
+  container.innerHTML = MOONLK_DATA.instagram.map((item, idx) => `
+    <div class="insta-item" onclick="openInstaLightbox(${idx})">
+      <img src="${item.image}" alt="MoonLK Community Feed ${idx + 1}" loading="lazy">
+      <div class="insta-overlay">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span style="font-size: 0.75rem; font-weight:600; margin-left: 0.35rem;">${item.likes}</span>
+      </div>
+    </div>
+  `).join("");
+}
+
+function openInstaLightbox(index) {
+  const item = MOONLK_DATA.instagram[index];
+  if (!item) return;
+  window.moonUI.showToast(`Previewing ${item.handle}: "${item.caption}"`, "info");
+}
+window.openInstaLightbox = openInstaLightbox;
+
+// --- Atelier Flagship Booking Modal ---
+function initAtelierBooking() {
+  const openBtns = document.querySelectorAll("[data-open-booking]");
+  openBtns.forEach(b => b.addEventListener("click", () => {
+    window.moonUI.openModal("bookingModal");
+  }));
+
+  const form = document.getElementById("atelierBookingForm");
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("bookName")?.value;
+    const date = document.getElementById("bookDate")?.value;
+    const time = document.getElementById("bookTime")?.value;
+
+    window.moonUI.closeModal("bookingModal");
+    window.moonUI.showToast(
+      `Private fitting requested for ${name} on ${date} at ${time}. Our Kurunegala concierge will reach out.`,
+      "success"
+    );
+    form.reset();
+  });
+}
+
+// --- VIP Newsletter ---
+function initNewsletter() {
+  const form = document.getElementById("vipNewsletterForm");
+  form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const input = document.getElementById("newsletterEmail");
+    if (!input || !input.value) return;
+
+    window.moonUI.showToast(
+      `Welcome to the MoonLK Atelier Club. Use code "MOONLK10" for 10% off your order.`,
+      "success"
+    );
+    // Automatically apply privilege code in state
+    window.moonState.applyCoupon("MOONLK10");
+    input.value = "";
+  });
+}
+
+// --- Currency Controls ---
+function initCurrencyControls() {
+  const current = window.moonState.currency;
+  document.querySelectorAll(".currency-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.currency === current);
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".currency-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      window.moonState.setCurrency(btn.dataset.currency);
+      window.moonUI.showToast(`Currency switched to ${btn.dataset.currency}`, "info");
+    });
+  });
+}
+
+// --- Search Overlay & Shortcuts ---
+function initSearch() {
+  const searchTriggers = document.querySelectorAll("[data-open-search]");
+  searchTriggers.forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.moonUI.openModal("searchModal");
+      setTimeout(() => {
+        document.getElementById("overlaySearchInput")?.focus();
+      }, 100);
+    });
+  });
+
+  // Shortcut Ctrl+K / Cmd+K
+  window.addEventListener("keydown", (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+      e.preventDefault();
+      window.moonUI.openModal("searchModal");
+      setTimeout(() => {
+        document.getElementById("overlaySearchInput")?.focus();
+      }, 100);
+    }
+  });
+
+  // Modal search live input
+  const input = document.getElementById("overlaySearchInput");
+  const resultsContainer = document.getElementById("overlaySearchResults");
+  input?.addEventListener("input", (e) => {
+    const q = e.target.value.toLowerCase().trim();
+    if (!q) {
+      if (resultsContainer) resultsContainer.innerHTML = `<p style="text-align:center; color:var(--color-charcoal-400); font-size:0.875rem;">Type keywords like "Linen", "Slip Gown", "Blazer", or "Silk"...</p>`;
+      return;
+    }
+
+    const matches = MOONLK_DATA.products.filter(p => 
+      p.name.toLowerCase().includes(q) ||
+      p.category.toLowerCase().includes(q) ||
+      p.material.toLowerCase().includes(q)
+    );
+
+    if (matches.length === 0) {
+      if (resultsContainer) resultsContainer.innerHTML = `<p style="text-align:center; color:var(--color-charcoal-600); font-size:0.875rem;">No matching garments found for "${q}".</p>`;
+      return;
+    }
+
+    if (resultsContainer) {
+      resultsContainer.innerHTML = matches.map(p => `
+        <div class="search-result-row" style="display:flex; align-items:center; justify-content:space-between; padding:0.75rem 0; border-bottom:1px solid var(--color-border); cursor:pointer;" onclick="window.moonUI.closeModal('searchModal'); window.moonShop.openProductModal('${p.id}');">
+          <div style="display:flex; align-items:center; gap:0.85rem;">
+            <img src="${p.images[0]}" style="width:40px; height:52px; object-fit:cover; border-radius:2px;" alt="${p.name}">
+            <div>
+              <div style="font-weight:600; font-size:0.875rem; color:var(--color-charcoal-900);">${p.name}</div>
+              <div style="font-size:0.75rem; color:var(--color-charcoal-400); text-transform:uppercase;">${p.category} · ${p.material}</div>
+            </div>
+          </div>
+          <span style="font-weight:600; font-size:0.8125rem;">${window.moonState.formatPrice(p.priceLKR)}</span>
+        </div>
+      `).join("");
+    }
+  });
+}
+
+// --- Size Guide Modal ---
+function initSizeGuide() {
+  document.querySelectorAll("[data-open-size-guide]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.moonUI.openModal("sizeGuideModal");
+    });
+  });
+
+  const unitBtns = document.querySelectorAll(".size-unit-btn");
+  unitBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      unitBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const unit = btn.dataset.unit; // 'cm' or 'in'
+      document.querySelectorAll(".size-chart-table [data-cm]").forEach(td => {
+        td.textContent = unit === "cm" ? td.dataset.cm : td.dataset.in;
+      });
+    });
+  });
+}
+
+// --- Global Drawer & Nav Triggers ---
+function bindGlobalNavTriggers() {
+  // Cart drawer triggers
+  document.querySelectorAll("[data-open-cart]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.moonUI.openDrawer("cartDrawer");
+    });
+  });
+
+  // Wishlist drawer triggers
+  document.querySelectorAll("[data-open-wishlist]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.moonUI.openDrawer("wishlistDrawer");
+    });
+  });
+
+  // Mobile menu toggle
+  const mobileToggle = document.getElementById("mobileNavToggle");
+  mobileToggle?.addEventListener("click", () => {
+    window.moonUI.openDrawer("mobileNavDrawer");
+  });
+
+  // Close drawer buttons
+  document.querySelectorAll(".drawer-close-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      window.moonUI.closeAllDrawers();
+    });
+  });
+
+  // Close modal buttons
+  document.querySelectorAll(".modal-close-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const modal = btn.closest(".modal-overlay");
+      if (modal) modal.classList.remove("active");
+      document.body.classList.remove("lock-scroll");
+    });
+  });
+
+  // Category portal cards: click navigates & filters shop
+  document.querySelectorAll(".category-portal-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const cat = card.dataset.targetCategory;
+      const targetPill = document.querySelector(`.filter-pill[data-category="${cat}"]`);
+      if (targetPill) targetPill.click();
+
+      const shopSec = document.getElementById("shopSection");
+      shopSec?.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+}
+
+  </script>
+<!-- Embedded Self-Contained Application Scripts -->
   <script>
 /**
  * MoonLK Clothing - Atelier Catalog & Curated Editorial Data
