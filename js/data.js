@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MoonLK Clothing - Atelier Catalog & Curated Editorial Data
  * Kurunegala, Sri Lanka
  */
@@ -9,7 +9,7 @@ const MOONLK_DATA = {
     tagline: "Contemporary Atelier & Island Silhouettes",
     origin: "Kurunegala, Sri Lanka",
     address: "No. 48, Colombo Road, Kurunegala, North Western Province, Sri Lanka",
-    phone: "+94 37 222 8490",
+    phone: "+94 72 888 7503",
     email: "atelier@moonlk.com",
     established: "2024",
     hours: "Tuesday – Sunday: 10:00 AM – 7:30 PM (Poya Days Closed)",
