@@ -13,6 +13,10 @@ const MOONLK_DATA = {
     email: "atelier@moonlk.com",
     established: "2024",
     hours: "Tuesday – Sunday: 10:00 AM – 7:30 PM (Poya Days Closed)",
+    social: {
+      tiktok: "https://www.tiktok.com/@moon.lk4",
+      facebook: "https://www.facebook.com/hellomoon.lk"
+    },
     currencyRateUSD: 0.0033 // 1 LKR approx 0.0033 USD (or 1 USD = 305 LKR)
   },
 
@@ -545,37 +549,37 @@ const MOONLK_DATA = {
 
   instagram: [
     {
-      handle: "@moonlk_official",
+      handle: "@moon.lk4",
       likes: "1,420",
       image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=600&auto=format&fit=crop",
       caption: "Muted mornings in Kurunegala. Draped in Edition 04."
     },
     {
-      handle: "@moonlk_official",
+      handle: "@moon.lk4",
       likes: "982",
       image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600&auto=format&fit=crop",
       caption: "Silk organza catching the dusk breeze."
     },
     {
-      handle: "@moonlk_official",
+      handle: "@moon.lk4",
       likes: "2,130",
       image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600&auto=format&fit=crop",
       caption: "Menswear tailoring tailored for island humidity."
     },
     {
-      handle: "@moonlk_official",
+      handle: "@moon.lk4",
       likes: "1,754",
       image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=600&auto=format&fit=crop",
       caption: "Artisan woven palm totes, handcrafted with Italian calfskin."
     },
     {
-      handle: "@moonlk_official",
+      handle: "@moon.lk4",
       likes: "1,890",
       image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
       caption: "The Aura Slip Gown in Blush Champagne. Bespoke fittings available."
     },
     {
-      handle: "@moonlk_official",
+      handle: "@moon.lk4",
       likes: "1,240",
       image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=600&auto=format&fit=crop",
       caption: "Architectural lapels. Designed in Kurunegala, worn worldwide."

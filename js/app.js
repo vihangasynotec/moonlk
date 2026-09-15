@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MoonLK Clothing - Main Application Entry & Page Orchestration
  * Kurunegala, Sri Lanka
  */
@@ -146,28 +146,28 @@ function openJournalModal(journalId) {
 }
 window.openJournalModal = openJournalModal;
 
-// --- Instagram Community Feed ---
+// --- Social & Community Feed ---
 function initInstagram() {
   const container = document.getElementById("instaGrid");
   if (!container) return;
 
   container.innerHTML = MOONLK_DATA.instagram.map((item, idx) => `
-    <div class="insta-item" onclick="openInstaLightbox(${idx})">
+    <a href="https://www.tiktok.com/@moon.lk4" target="_blank" rel="noopener" class="insta-item" style="display:block; text-decoration:none;">
       <img src="${item.image}" alt="MoonLK Community Feed ${idx + 1}" loading="lazy">
       <div class="insta-overlay">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-        </svg>
-        <span style="font-size: 0.75rem; font-weight:600; margin-left: 0.35rem;">${item.likes}</span>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:0.25rem;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.88 2.89 2.89 0 0 1-2.88-2.88 2.89 2.89 0 0 1 2.88-2.88c.37 0 .72.07 1.05.2v-3.52a6.38 6.38 0 0 0-1.05-.09A6.33 6.33 0 0 0 3 15.67 6.33 6.33 0 0 0 9.33 22a6.33 6.33 0 0 0 6.33-6.33V8.89a8.28 8.28 0 0 0 4.88 1.57V7a4.87 4.87 0 0 1-.95-.31z"/>
+          </svg>
+          <span style="font-size: 0.7rem; font-weight:600; letter-spacing:0.04em;">Watch on TikTok</span>
+        </div>
       </div>
-    </div>
+    </a>
   `).join("");
 }
 
 function openInstaLightbox(index) {
-  const item = MOONLK_DATA.instagram[index];
-  if (!item) return;
-  window.moonUI.showToast(`Previewing ${item.handle}: "${item.caption}"`, "info");
+  window.open("https://www.tiktok.com/@moon.lk4", "_blank");
 }
 window.openInstaLightbox = openInstaLightbox;
 
