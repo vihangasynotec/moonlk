@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOONLK | Luxury Fashion Atelier & E-Commerce — Kurunegala, Sri Lanka</title>
+  <meta name="description" content="MoonLK Clothing is a contemporary fashion house and atelier based in Kurunegala, Sri Lanka. Minimalist luxury silhouettes, organic hand-spun linen, mulberry silk, and mindful island craftsmanship.">
+  
+  <!-- OpenGraph / Social Media -->
+  <meta property="og:title" content="MOONLK Clothing — Luxury Atelier, Kurunegala">
+  <meta property="og:description" content="Contemporary minimalism crafted from tropical linens and silks. Island-wide Sri Lanka delivery & worldwide shipping.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.jpeg">
+
+  <!-- Favicon using official MoonLK brand logo -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. ANNOUNCEMENT TICKER
+       ========================================================================== -->
+  <aside class="announcement-bar" aria-label="Atelier Announcement">
+    <div class="announcement-inner">
+      <span class="announcement-item">Curated in Kurunegala, Sri Lanka</span>
+      <span class="announcement-item">Complimentary Island-Wide Express Delivery over LKR 25,000</span>
+      <span class="announcement-item">Privilege Code: Use <strong>MOONLK10</strong> for 10% Off Your First Order</span>
+      <span class="announcement-item">Bespoke Fittings Available at 48 Colombo Road Flagship</span>
+      <span class="announcement-item">Worldwide DHL Express Shipping Available</span>
+      <!-- Repeated for seamless loop -->
+      <span class="announcement-item">Curated in Kurunegala, Sri Lanka</span>
+      <span class="announcement-item">Complimentary Island-Wide Express Delivery over LKR 25,000</span>
+      <span class="announcement-item">Privilege Code: Use <strong>MOONLK10</strong> for 10% Off Your First Order</span>
+      <span class="announcement-item">Bespoke Fittings Available at 48 Colombo Road Flagship</span>
+      <span class="announcement-item">Worldwide DHL Express Shipping Available</span>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       2. SITE HEADER & NAVIGATION (BEST-IN-CLASS LUXURY ATELIER BAR)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Header Left: Mobile Menu Toggle & Brand Identity -->
+      <div class="header-left">
+        <button class="btn-icon mobile-nav-toggle" id="mobileNavToggle" aria-label="Open Navigation Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+
+        <!-- Official MoonLK Brand Emblem & Wordmark (Left Aligned) -->
+        <a href="#" class="brand-identity-link" title="MoonLK Clothing Brand, Kurunegala">
+          <img src="assets/logo.jpeg" alt="MoonLK Brand Emblem" class="brand-logo-emblem">
+          <div class="brand-text-group">
+            <span class="brand-logo-title">Moon<span class="brand-accent">.</span>Lk</span>
+            <span class="brand-logo-tagline">Clothing Brand · Kurunegala</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Header Center: Navigation Menu with Collections Dropdown -->
+      <nav class="header-nav" aria-label="Primary Navigation">
+        <a href="#shopSection" class="nav-link">Shop All</a>
+        
+        <div class="nav-item-dropdown">
+          <a href="#categoryPortals" class="nav-link" style="display:inline-flex; align-items:center; gap:4px;">
+            Collections
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="#shopSection" class="nav-dropdown-item" onclick="window.moonShop.currentCategory='women'; window.moonShop.renderProducts();">
+              <span>Women's Atelier</span>
+              <span class="nav-dropdown-tag">Silks & Gowns</span>
+            </a>
+            <a href="#shopSection" class="nav-dropdown-item" onclick="window.moonShop.currentCategory='men'; window.moonShop.renderProducts();">
+              <span>Men's Tailoring</span>
+              <span class="nav-dropdown-tag">Ceylon Linens</span>
+            </a>
+            <a href="#shopSection" class="nav-dropdown-item" onclick="window.moonShop.currentCategory='kids'; window.moonShop.renderProducts();">
+              <span>Little Moon</span>
+              <span class="nav-dropdown-tag">Heirloom</span>
+            </a>
+            <a href="#shopSection" class="nav-dropdown-item" onclick="window.moonShop.currentCategory='accessories'; window.moonShop.renderProducts();">
+              <span>Fine Accessories</span>
+              <span class="nav-dropdown-tag">Talipot & Gems</span>
+            </a>
+            <div style="border-top: 1px solid var(--color-border); margin: 0.35rem 0;"></div>
+            <a href="#lookbookSection" class="nav-dropdown-item">
+              <span>The Lookbook</span>
+              <span class="nav-dropdown-tag">Edition 04</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#lookbookSection" class="nav-link">Lookbook</a>
+        <a href="#flagshipSection" class="nav-link">Kurunegala Flagship</a>
+        <a href="#journalSection" class="nav-link">Journal</a>
+      </nav>
+
+      <!-- Header Actions Right -->
+      <div class="header-actions">
+        <!-- Currency Switcher -->
+        <div class="currency-toggle" title="Select Currency">
+          <button class="currency-btn active" data-currency="LKR">LKR</button>
+          <button class="currency-btn" data-currency="USD">USD</button>
+        </div>
+
+        <!-- Sleek Search Pill with Shortcut Hint -->
+        <button class="nav-search-btn" data-open-search title="Search Silhouettes (Ctrl+K)" aria-label="Search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span style="font-size:0.75rem;">Search</span>
+          <span class="nav-search-kbd">⌘K</span>
+        </button>
+
+        <!-- Wishlist Icon with Dynamic Badge -->
+        <button class="btn-icon" data-open-wishlist title="View Saved Pieces" aria-label="Wishlist">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Bag Icon with Dynamic Badge -->
+        <button class="btn-icon" data-open-cart title="View Shopping Bag" aria-label="Shopping Bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="badge-count cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       3. HERO CAMPAIGN SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      
+      <!-- Editorial Copy -->
+      <div class="hero-content">
+        <div class="hero-edition-pill">
+          <span class="pulse-dot"></span>
+          Edition 04 / Tropical Minimalism
+        </div>
+        
+        <h1 class="hero-title">
+          Silhouettes of <br>
+          <em>Island Quietude</em>
+        </h1>
+
+        <p class="hero-description">
+          Organic hand-spun Ceylon linens and bias-cut mulberry silks, tailored with mindful architecture in our Kurunegala atelier. Designed for tropical ease and global elegance.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#shopSection" class="btn btn-dark btn-lg">Explore Collection</a>
+          <a href="#lookbookSection" class="btn btn-blush btn-lg">View Lookbook</a>
+        </div>
+
+        <div class="hero-meta-row">
+          <div class="hero-meta-item">
+            <span class="hero-meta-number">04</span>
+            <span class="hero-meta-label">Curated Editions</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-number">100%</span>
+            <span class="hero-meta-label">Artisan Tailored</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-number">LK</span>
+            <span class="hero-meta-label">Kurunegala Atelier</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editorial Visual Split -->
+      <div class="hero-media-wrap">
+        <div class="hero-media-card">
+          <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1200&auto=format&fit=crop" alt="MoonLK Edition 04 Campaign Hero">
+          <div class="hero-badge-overlay">
+            <div class="hero-badge-info">
+              <p>Campaign Piece</p>
+              <h4>Aura Silk Charmeuse Gown</h4>
+            </div>
+            <button class="btn btn-sm btn-dark" onclick="window.moonShop.openProductModal('mlk-w-01')">View Piece</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. BRAND STORY SECTION
+       ========================================================================== -->
+  <section class="story-section" id="story">
+    <div class="container story-grid">
+      
+      <!-- Mosaic Visuals -->
+      <div class="story-imagery-mosaic">
+        <div class="story-img-main">
+          <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=900&auto=format&fit=crop" alt="Inside MoonLK Kurunegala Atelier">
+        </div>
+        <div class="story-img-secondary" style="position: relative;">
+          <img src="assets/logo.jpeg" alt="The MoonLK Atelier Muse & Signature Crescent Silhouette" style="object-fit: cover; object-position: center 15%;">
+          <div style="position: absolute; bottom: 12px; left: 12px; right: 12px; background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(8px); padding: 0.6rem 0.85rem; border-radius: var(--border-radius-sm); font-size: 0.6875rem; font-weight: 600; color: var(--color-charcoal-900); text-align: center; border: 1px solid var(--color-pink-200); box-shadow: var(--shadow-sm);">
+            The Moon.Lk Muse & Atelier Silhouette
+          </div>
+        </div>
+        <div class="story-floating-stat">
+          <span>Est. 2024</span>
+          <small>Kurunegala, Sri Lanka</small>
+        </div>
+      </div>
+
+      <!-- Story Text -->
+      <div class="story-content">
+        <span class="subheading-label">The Atelier Philosophy</span>
+        <h2 class="heading-section">
+          Born in Kurunegala. <br>
+          Woven for Mindful Wanderers.
+        </h2>
+        
+        <p class="lead-text">
+          MoonLK was founded on a simple conviction: luxury should not scream; it should breathe. In our light-filled workshop on Colombo Road, Kurunegala, we weave garments that honor the equatorial heat of Sri Lanka without sacrificing structured tailoring.
+        </p>
+
+        <p style="color: var(--color-charcoal-600); font-size: 0.9375rem; line-height: 1.7;">
+          Every seam is French-bound; every mother-of-pearl button is individually hand-stitched by generational seamstresses from the Wayamba province. We dye our fabrics in natural plant extractions and finish each piece in small, numbered editions.
+        </p>
+
+        <div class="story-pillars">
+          <div class="pillar-item">
+            <h4 class="pillar-title">Equatorial Linens</h4>
+            <p class="pillar-desc">Dense, pre-washed weaves that drape effortlessly and soften with every island sunrise.</p>
+          </div>
+          <div class="pillar-item">
+            <h4 class="pillar-title">Mindful Small Batches</h4>
+            <p class="pillar-desc">No mass overproduction. Each piece is cut and finished intentionally in Kurunegala.</p>
+          </div>
+          <div class="pillar-item">
+            <h4 class="pillar-title">Botanical Ceylon Dyes</h4>
+            <p class="pillar-desc">Subtle blush and ivory tones created using native madder roots and rainwater tanks.</p>
+          </div>
+          <div class="pillar-item">
+            <h4 class="pillar-title">Fair Island Wages</h4>
+            <p class="pillar-desc">Supporting regional female artisans with ethical studio employment and heritage pride.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 1rem;">
+          <a href="#flagshipSection" class="btn btn-outline-dark">Visit Flagship Atelier →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. CATEGORY PORTALS (Women, Men, Kids, Accessories)
+       ========================================================================== -->
+  <section class="categories-section" id="categoryPortals">
+    <div class="container">
+      <div class="section-header-row">
+        <div class="section-header-title-block">
+          <span class="subheading-label">Curated Universes</span>
+          <h2 class="heading-section">Explore Collections</h2>
+        </div>
+        <p class="lead-text" style="max-width: 420px; font-size: 0.9375rem;">
+          From architectural tailoring to heirloom loungewear, each category reflects the serene MoonLK sensibility.
+        </p>
+      </div>
+
+      <div class="category-portals-grid">
+        
+        <!-- Portal 1: Women -->
+        <div class="category-portal-card" data-target-category="women">
+          <img class="category-portal-bg" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900&auto=format&fit=crop" alt="Women's Atelier Collection">
+          <div class="category-portal-gradient"></div>
+          <div class="category-portal-content">
+            <span class="category-portal-tag">Edition 04</span>
+            <h3 class="category-portal-name">Women’s Atelier</h3>
+            <span class="category-portal-cta">Shop Silhouettes →</span>
+          </div>
+        </div>
+
+        <!-- Portal 2: Men -->
+        <div class="category-portal-card" data-target-category="men">
+          <img class="category-portal-bg" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=900&auto=format&fit=crop" alt="Men's Tailoring Collection">
+          <div class="category-portal-gradient"></div>
+          <div class="category-portal-content">
+            <span class="category-portal-tag">Heritage Series</span>
+            <h3 class="category-portal-name">Men’s Tailoring</h3>
+            <span class="category-portal-cta">Shop Silhouettes →</span>
+          </div>
+        </div>
+
+        <!-- Portal 3: Kids -->
+        <div class="category-portal-card" data-target-category="kids">
+          <img class="category-portal-bg" src="https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=900&auto=format&fit=crop" alt="Little Moon Kids Collection">
+          <div class="category-portal-gradient"></div>
+          <div class="category-portal-content">
+            <span class="category-portal-tag">Little Moon</span>
+            <h3 class="category-portal-name">Children’s Heirloom</h3>
+            <span class="category-portal-cta">Shop Silhouettes →</span>
+          </div>
+        </div>
+
+        <!-- Portal 4: Accessories -->
+        <div class="category-portal-card" data-target-category="accessories">
+          <img class="category-portal-bg" src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=900&auto=format&fit=crop" alt="Artisan Accessories Collection">
+          <div class="category-portal-gradient"></div>
+          <div class="category-portal-content">
+            <span class="category-portal-tag">Handcrafted</span>
+            <h3 class="category-portal-name">Curated Accessories</h3>
+            <span class="category-portal-cta">Shop Silhouettes →</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. SHOP CATALOG SECTION (Filters, Sorting, Cards Grid)
+       ========================================================================== -->
+  <section class="shop-section" id="shopSection">
+    <div class="container">
+      
+      <div class="section-header-row">
+        <div class="section-header-title-block">
+          <span class="subheading-label">The Complete Catalog</span>
+          <h2 class="heading-section">Curated Silhouettes</h2>
+        </div>
+        <p class="lead-text" style="font-size: 0.9375rem; max-width: 440px;">
+          Available for instant island-wide dispatch from our Kurunegala atelier or bespoke in-store fitting.
+        </p>
+      </div>
+
+      <!-- Filter Controls Bar -->
+      <div class="shop-filter-bar">
+        
+        <!-- Category Filter Pills -->
+        <div class="category-filter-pills" role="tablist">
+          <button class="filter-pill active" data-category="all" role="tab">All Pieces</button>
+          <button class="filter-pill" data-category="women" role="tab">Women</button>
+          <button class="filter-pill" data-category="men" role="tab">Men</button>
+          <button class="filter-pill" data-category="kids" role="tab">Kids</button>
+          <button class="filter-pill" data-category="accessories" role="tab">Accessories</button>
+        </div>
+
+        <!-- Sorting & View Switcher -->
+        <div class="shop-sort-controls">
+          <select class="sort-select" id="shopSortSelect" aria-label="Sort Catalog">
+            <option value="featured">Sort by: Featured</option>
+            <option value="newest">Sort by: Newest Releases</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+          </select>
+
+          <div class="grid-view-toggle">
+            <button class="view-btn active" id="viewGridBtn" title="4-Column Grid View" aria-label="4-Column Grid View">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+            </button>
+            <button class="view-btn" id="viewEditorialBtn" title="2-Column Editorial View" aria-label="2-Column Editorial View">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="3" y="3" width="8" height="18"/>
+                <rect x="13" y="3" width="8" height="18"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Dynamic Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered dynamically by js/shop.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. EDITORIAL LOOKBOOK SECTION
+       ========================================================================== -->
+  <section class="lookbook-section" id="lookbookSection">
+    <div class="container">
+      
+      <div class="section-header-row">
+        <div class="section-header-title-block">
+          <span class="subheading-label">Interactive Lookbook</span>
+          <h2 class="heading-section">The Living Spread</h2>
+        </div>
+        <div class="lookbook-controls">
+          <span id="lookbookCounter" style="font-size:0.8125rem; font-weight:600; letter-spacing:0.1em; color:var(--color-charcoal-400);">01 / 04</span>
+          <button class="btn-icon" id="lookbookPrevBtn" aria-label="Previous Look">←</button>
+          <button class="btn-icon" id="lookbookNextBtn" aria-label="Next Look">→</button>
+        </div>
+      </div>
+
+      <div class="lookbook-spread-grid">
+        
+        <!-- Large Interactive Image Container with Hotspots -->
+        <div class="lookbook-image-container">
+          <img id="lookbookMainImage" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1400&auto=format&fit=crop" alt="MoonLK Lookbook Spread">
+          <div id="lookbookHotspots">
+            <!-- Rendered by js/app.js -->
+          </div>
+        </div>
+
+        <!-- Editorial Sidebar / Quote -->
+        <div class="lookbook-sidebar">
+          <span id="lookbookSeason" class="subheading-label">Edition 04 / Spring-Summer</span>
+          <h3 id="lookbookTitle" class="heading-card" style="font-size: 2.2rem; line-height: 1.15;">Look 01: The Dawn of Solitude</h3>
+          <blockquote id="lookbookQuote" class="lookbook-quote">
+            “Linen shaped by morning breeze over the Kurunegala ridge.”
+          </blockquote>
+          <p class="lead-text" style="font-size: 0.9375rem;">
+            Hover and click the numbered pins on the spread to view atelier garment specifics or add pieces directly to your private bag.
+          </p>
+          <div style="margin-top: 0.5rem;">
+            <a href="#shopSection" class="btn btn-outline-dark">Shop Entire Lookbook →</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. KURUNEGALA FLAGSHIP ATELIER SHOWCASE
+       ========================================================================== -->
+  <section class="flagship-section" id="flagshipSection">
+    <div class="container">
+      
+      <div class="flagship-card">
+        
+        <div class="flagship-media">
+          <img src="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=1200&auto=format&fit=crop" alt="MoonLK Flagship Atelier in Kurunegala">
+          <div class="flagship-media-badge">Flagship Atelier</div>
+        </div>
+
+        <div class="flagship-info">
+          <span class="subheading-label">The Physical Presence</span>
+          <h2 class="heading-section" style="font-size: 2.5rem;">The Kurunegala Atelier</h2>
+          
+          <p class="lead-text" style="font-size: 1rem;">
+            Located on historic Colombo Road in the heart of Kurunegala. We invite you to experience our fabrics firsthand, request custom tailoring adjustments, or book a private fitting with our head stylist.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin: 0.5rem 0;">
+            <div class="store-detail-row">
+              <span class="store-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <span>No. 48, Colombo Road, Kurunegala, North Western Province, Sri Lanka</span>
+            </div>
+
+            <div class="store-detail-row">
+              <span class="store-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </span>
+              <span>Tuesday – Sunday: 10:00 AM – 7:30 PM (Closed on Full Moon Poya Days)</span>
+            </div>
+
+            <div class="store-detail-row">
+              <span class="store-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              <span>Concierge Direct: +94 37 222 8490 / atelier@moonlk.com</span>
+            </div>
+          </div>
+
+          <div class="flagship-actions">
+            <button class="btn btn-dark" data-open-booking>Book Private Fitting</button>
+            <a href="https://maps.google.com/?q=Kurunegala+Sri+Lanka" target="_blank" rel="noopener" class="btn btn-outline-dark">
+              Get Directions ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. ATELIER JOURNAL SECTION
+       ========================================================================== -->
+  <section class="journal-section" id="journalSection">
+    <div class="container">
+      
+      <div class="section-header-row">
+        <div class="section-header-title-block">
+          <span class="subheading-label">Editorial Perspectives</span>
+          <h2 class="heading-section">The Atelier Journal</h2>
+        </div>
+        <p class="lead-text" style="font-size: 0.9375rem; max-width: 420px;">
+          Reflections on sustainable island textiles, architectural tailoring, and the artisans shaping MoonLK.
+        </p>
+      </div>
+
+      <div class="journal-grid" id="journalGrid">
+        <!-- Rendered by js/app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. INSTAGRAM COMMUNITY FEED
+       ========================================================================== -->
+  <section class="instagram-section">
+    <div class="container-wide">
+      <div class="insta-header-center">
+        <span class="subheading-label">Follow The Dialogue</span>
+        <h3 class="heading-card" style="font-size: 1.85rem;">@moonlk_official</h3>
+        <p style="font-size: 0.8125rem; color: var(--color-charcoal-600);">Tag #MoonLK to be featured in our quarterly print edition.</p>
+      </div>
+
+      <div class="insta-grid" id="instaGrid">
+        <!-- Rendered by js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. VIP ATELIER NEWSLETTER CLUB
+       ========================================================================== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <span class="subheading-label">Atelier Privilege</span>
+        <h2 class="heading-section" style="font-size: 2.3rem;">Join The MoonLK Guild</h2>
+        <p class="lead-text" style="font-size: 0.9375rem;">
+          Subscribe to receive private invitations to runway previews, bespoke Kurunegala fitting sessions, and 10% privilege on your first order.
+        </p>
+        <form class="newsletter-form" id="vipNewsletterForm">
+          <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="Enter your email address..." required>
+          <button type="submit" class="btn btn-dark">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       12. LUXURY FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <div class="footer-brand-col">
+          <a href="#" class="footer-brand-identity">
+            <img src="assets/logo.jpeg" alt="MoonLK Logo" class="footer-logo-emblem">
+            <div>
+              <span class="footer-logo">Moon.Lk</span>
+              <span class="footer-logo-sub">Clothing Brand · Kurunegala</span>
+            </div>
+          </a>
+          <p class="footer-tagline">
+            Contemporary luxury fashion house rooted in Kurunegala, Sri Lanka. Sculpting light, linen, and timeless island silhouettes.
+          </p>
+          <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.5);">
+            No. 48 Colombo Road, Kurunegala, LK<br>
+            +94 37 222 8490 · concierge@moonlk.com
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Collections</h5>
+          <ul class="footer-links-list">
+            <li><a href="#shopSection" onclick="window.moonShop.currentCategory='women'; window.moonShop.renderProducts();">Women's Atelier</a></li>
+            <li><a href="#shopSection" onclick="window.moonShop.currentCategory='men'; window.moonShop.renderProducts();">Men's Tailoring</a></li>
+            <li><a href="#shopSection" onclick="window.moonShop.currentCategory='kids'; window.moonShop.renderProducts();">Little Moon Kids</a></li>
+            <li><a href="#shopSection" onclick="window.moonShop.currentCategory='accessories'; window.moonShop.renderProducts();">Fine Accessories</a></li>
+            <li><a href="#lookbookSection">The Lookbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Client Concierge</h5>
+          <ul class="footer-links-list">
+            <li><a href="javascript:void(0)" data-open-size-guide>Interactive Size Guide</a></li>
+            <li><a href="javascript:void(0)" data-open-booking>Book Fitting in Kurunegala</a></li>
+            <li><a href="javascript:void(0)" data-open-cart>Review Shopping Bag</a></li>
+            <li><a href="javascript:void(0)" data-open-wishlist>Saved Wishlist</a></li>
+            <li><a href="#journalSection">Atelier Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Delivery & Guarantees</h5>
+          <ul class="footer-links-list">
+            <li><span style="color:var(--color-pink-accent);">✓ Island-wide Express Delivery (2-3 Days)</span></li>
+            <li><span style="color:rgba(255,255,255,0.7);">✓ Same-day Kurunegala Store Pickup</span></li>
+            <li><span style="color:rgba(255,255,255,0.7);">✓ Complimentary Silk Dustbag</span></li>
+            <li><span style="color:rgba(255,255,255,0.7);">✓ Hassle-Free 14-Day Exchanges</span></li>
+            <li><span style="color:rgba(255,255,255,0.7);">✓ Certified Organic Sri Lankan Fabrics</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2024–2026 MOONLK (Pvt) Ltd. All Rights Reserved. Crafted with quiet luxury in Kurunegala, Sri Lanka.
+        </div>
+        <div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.65); letter-spacing: 0.04em; text-align: right;">
+          Designed & Developed by <strong style="color: var(--color-pink-accent); font-weight: 600;">Lunexa Software (PVT) LTD</strong> by <span style="color: var(--color-white); font-weight: 500;">itzme_vihanga</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MOBILE BOTTOM APP BAR (High-End Fashion App UX)
+       ========================================================================== -->
+  <aside class="mobile-bottom-bar" aria-label="Mobile Navigation">
+    <div class="mobile-bottom-nav">
+      <a href="#" class="mobile-nav-item active">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="#shopSection" class="mobile-nav-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="7" height="7"/>
+          <rect x="14" y="3" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/>
+          <rect x="3" y="14" width="7" height="7"/>
+        </svg>
+        <span>Shop</span>
+      </a>
+      <button class="mobile-nav-item" data-open-search>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <span>Search</span>
+      </button>
+      <button class="mobile-nav-item" data-open-wishlist>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+        <span>Saved</span>
+        <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+      </button>
+      <button class="mobile-nav-item" data-open-cart>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <span>Bag</span>
+        <span class="badge-count cart-count-badge" style="display: none;">0</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       DRAWER OVERLAY BACKDROP
+       ========================================================================== -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- ==========================================================================
+       CART SLIDE-OUT DRAWER
+       ========================================================================== -->
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Shopping Bag <span id="cartHeaderCount">0 items</span></h3>
+      <button class="drawer-close-btn" aria-label="Close Bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress Meter -->
+    <div style="padding: 1rem 1.75rem 0;">
+      <div class="shipping-progress-box" id="cartShippingProgressBox">
+        <div class="shipping-progress-text" id="cartShippingText">
+          Add more for Free Island-wide Delivery
+        </div>
+        <div class="shipping-progress-bar">
+          <div class="shipping-progress-fill" id="cartShippingFill" style="width: 0%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Line Items Body -->
+    <div class="drawer-body" id="cartItemsList">
+      <!-- Injected by js/shop.js -->
+    </div>
+
+    <!-- Empty State -->
+    <div class="drawer-empty" id="cartEmptyState" style="display: none;">
+      <div class="drawer-empty-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+      </div>
+      <h4 class="heading-card">Your Bag is Empty</h4>
+      <p style="font-size: 0.8125rem; color: var(--color-charcoal-400);">Discover our newest Edition 04 linen & silk arrivals.</p>
+      <button class="btn btn-sm btn-dark" onclick="window.moonUI.closeAllDrawers(); document.getElementById('shopSection').scrollIntoView({behavior:'smooth'});">Explore Catalog</button>
+    </div>
+
+    <!-- Drawer Footer / Summary / Checkout Trigger -->
+    <div class="drawer-footer" id="cartFooter">
+      <div id="cartActiveCouponWrap"></div>
+
+      <form class="coupon-box" id="cartCouponForm">
+        <input type="text" class="coupon-input" id="couponInput" placeholder="Privilege code (e.g. MOONLK10)">
+        <button type="submit" class="btn btn-outline-dark coupon-apply-btn">Apply</button>
+      </form>
+
+      <div class="drawer-totals">
+        <div class="total-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotalVal">LKR 0</span>
+        </div>
+        <div class="total-row" id="cartDiscountRow" style="display: none; color: var(--color-pink-deep);">
+          <span>Atelier Privilege</span>
+          <span id="cartDiscountVal">-LKR 0</span>
+        </div>
+        <div class="total-row">
+          <span>Island-wide Delivery</span>
+          <span id="cartShippingVal">Calculated at Checkout</span>
+        </div>
+        <div class="total-row grand-total">
+          <span>Estimated Total</span>
+          <span id="cartGrandTotalVal">LKR 0</span>
+        </div>
+      </div>
+
+      <button class="btn btn-dark btn-lg" id="cartCheckoutBtn" style="width: 100%;">
+        Proceed to Checkout
+      </button>
+
+      <div style="text-align: center; font-size: 0.6875rem; color: var(--color-charcoal-400); letter-spacing: 0.05em;">
+        Complimentary Silk Dustbag · Cash on Delivery & Koko Available
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       WISHLIST SLIDE-OUT DRAWER
+       ========================================================================== -->
+  <aside class="drawer" id="wishlistDrawer" aria-label="Saved Wishlist">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Saved Pieces <span id="wishlistHeaderCount">0 pieces</span></h3>
+      <button class="drawer-close-btn" aria-label="Close Wishlist">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-body" id="wishlistItemsList">
+      <!-- Injected by js/shop.js -->
+    </div>
+
+    <div class="drawer-empty" id="wishlistEmptyState" style="display: none;">
+      <div class="drawer-empty-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+      <h4 class="heading-card">Your Wishlist is Empty</h4>
+      <p style="font-size: 0.8125rem; color: var(--color-charcoal-400);">Click the heart icon on any silhouette to save for later.</p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MOBILE NAVIGATION DRAWER
+       ========================================================================== -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Menu">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-border); padding-bottom: 1.25rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <img src="assets/logo.jpeg" alt="MoonLK Logo" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 1.5px solid var(--color-pink-300);">
+        <div>
+          <div style="font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500; color: var(--color-charcoal-900); line-height: 1;">Moon.Lk</div>
+          <div style="font-size: 0.58rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-pink-deep); margin-top: 3px;">Kurunegala Atelier</div>
+        </div>
+      </div>
+      <button class="drawer-close-btn" aria-label="Close Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav-drawer-links">
+      <a href="#shopSection" class="mobile-nav-drawer-link" onclick="window.moonUI.closeAllDrawers()">Shop All Pieces <span>→</span></a>
+      <a href="#categoryPortals" class="mobile-nav-drawer-link" onclick="window.moonUI.closeAllDrawers()">Collections <span>→</span></a>
+      <a href="#lookbookSection" class="mobile-nav-drawer-link" onclick="window.moonUI.closeAllDrawers()">The Lookbook <span>→</span></a>
+      <a href="#flagshipSection" class="mobile-nav-drawer-link" onclick="window.moonUI.closeAllDrawers()">Kurunegala Store <span>→</span></a>
+      <a href="#journalSection" class="mobile-nav-drawer-link" onclick="window.moonUI.closeAllDrawers()">Atelier Journal <span>→</span></a>
+    </div>
+
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--color-border); display: flex; flex-direction: column; gap: 0.75rem;">
+      <button class="btn btn-outline-dark" data-open-booking style="width: 100%;">Book Kurunegala Fitting</button>
+      <div style="font-size: 0.75rem; color: var(--color-charcoal-400); text-align: center;">
+        Kurunegala Atelier: +94 37 222 8490
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       PRODUCT DETAIL QUICK-VIEW MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-label="Product Details">
+    <div class="modal-content" style="max-width: 960px;">
+      <button class="modal-close-btn" aria-label="Close Product View">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <div class="product-modal-grid">
+        
+        <!-- Gallery Side -->
+        <div class="product-modal-gallery">
+          <div class="product-modal-main-img">
+            <img src="" alt="MoonLK Garment">
+          </div>
+          <div class="product-modal-thumbs">
+            <!-- Thumbs injected dynamically -->
+          </div>
+        </div>
+
+        <!-- Details Side -->
+        <div class="product-modal-details">
+          
+          <div class="product-modal-header">
+            <span class="product-modal-edition">Edition 04 / Kurunegala Atelier</span>
+            <h2 class="product-modal-title">Product Name</h2>
+            <div class="product-modal-price">LKR 0</div>
+          </div>
+
+          <p class="product-modal-desc">
+            Draped by master artisans in our Kurunegala atelier...
+          </p>
+
+          <!-- Color Chooser -->
+          <div>
+            <div class="option-label">
+              <span>Colorway: <strong class="modal-selected-color-name" style="font-weight:600; color:var(--color-charcoal-900);">Blush</strong></span>
+            </div>
+            <div class="color-options-row modal-colors-wrap">
+              <!-- Swatches injected -->
+            </div>
+          </div>
+
+          <!-- Size Chooser & Size Guide Trigger -->
+          <div>
+            <div class="option-label">
+              <span>Select Size:</span>
+              <button class="btn-text" data-open-size-guide style="font-size:0.6875rem; letter-spacing:0.05em;">Size Guide (cm/in) ↗</button>
+            </div>
+            <div class="size-options-row modal-sizes-wrap">
+              <!-- Sizes injected -->
+            </div>
+          </div>
+
+          <!-- Stock Indicator -->
+          <div class="stock-warning-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span class="modal-stock-indicator">In Stock at Kurunegala Flagship</span>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="product-modal-actions">
+            <button class="btn btn-dark btn-lg modal-add-bag-btn" style="flex: 1;">Add to Bag</button>
+            <button class="btn btn-blush btn-lg modal-buy-now-btn" style="flex: 1;">Buy Now</button>
+          </div>
+
+          <!-- Accordions -->
+          <div class="product-accordion">
+            
+            <div class="accordion-item open">
+              <button class="accordion-trigger">
+                <span>Fabric & Craftsmanship</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="accordion-content">
+                <p style="margin-bottom:0.5rem;"><strong class="product-modal-material-name">100% Organic Island Mulberry Silk</strong></p>
+                <ul class="product-modal-craftsmanship-list" style="display:flex; flex-direction:column; gap:0.25rem;">
+                  <!-- Bullets injected -->
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>Kurunegala & Island-Wide Delivery</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="accordion-content">
+                <p>• <strong>Kurunegala Flagship Store:</strong> Complimentary same-day store pickup at 48 Colombo Road.</p>
+                <p>• <strong>Island-wide Sri Lanka:</strong> 2–3 business days via Prompt Express / Certis Lanka. Free over LKR 25,000.</p>
+                <p>• <strong>International:</strong> 3–5 business days via DHL Express.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span>Mindful Care Instructions</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Cold hand wash or delicate dry clean. Line dry in tropical shade. Steam gently on reverse side to preserve natural slub texture and botanical color luster.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SIZE GUIDE MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="sizeGuideModal" role="dialog" aria-modal="true" aria-label="Atelier Size Guide">
+    <div class="modal-content" style="max-width: 640px; padding: 2.5rem 2rem;">
+      <button class="modal-close-btn" aria-label="Close Size Guide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <span class="subheading-label">Atelier Measurements</span>
+      <h3 class="heading-card" style="font-size: 1.75rem; margin: 0.25rem 0 1rem;">Universal Garment Sizing</h3>
+      <p style="font-size: 0.8125rem; color: var(--color-charcoal-600); margin-bottom: 1.5rem;">
+        All MoonLK garments are cut with relaxed tropical ease. If between sizes, we recommend sizing down for a closer fit or sizing up for an editorial drape.
+      </p>
+
+      <div style="display:flex; justify-content:flex-end; gap:0.4rem; margin-bottom: 1rem;">
+        <button class="btn btn-sm btn-outline-dark size-unit-btn active" data-unit="cm">Centimeters (cm)</button>
+        <button class="btn btn-sm btn-outline-dark size-unit-btn" data-unit="in">Inches (in)</button>
+      </div>
+
+      <table class="size-chart-table" style="width: 100%; border-collapse: collapse; font-size: 0.8125rem; text-align: left;">
+        <thead>
+          <tr style="border-bottom: 2px solid var(--color-charcoal-900);">
+            <th style="padding: 0.75rem 0.5rem;">Size</th>
+            <th style="padding: 0.75rem 0.5rem;">Bust / Chest</th>
+            <th style="padding: 0.75rem 0.5rem;">Waist</th>
+            <th style="padding: 0.75rem 0.5rem;">Hips</th>
+            <th style="padding: 0.75rem 0.5rem;">Length</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding: 0.75rem 0.5rem; font-weight:600;">XS (UK 6)</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="82 - 85 cm" data-in="32 - 33.5 in">82 - 85 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="63 - 66 cm" data-in="24.8 - 26 in">63 - 66 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="88 - 91 cm" data-in="34.6 - 35.8 in">88 - 91 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="128 cm" data-in="50.4 in">128 cm</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding: 0.75rem 0.5rem; font-weight:600;">S (UK 8)</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="86 - 90 cm" data-in="33.8 - 35.4 in">86 - 90 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="67 - 71 cm" data-in="26.3 - 28 in">67 - 71 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="92 - 96 cm" data-in="36.2 - 37.8 in">92 - 96 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="130 cm" data-in="51.2 in">130 cm</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding: 0.75rem 0.5rem; font-weight:600;">M (UK 10)</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="91 - 96 cm" data-in="35.8 - 37.8 in">91 - 96 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="72 - 77 cm" data-in="28.3 - 30.3 in">72 - 77 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="97 - 102 cm" data-in="38.2 - 40.2 in">97 - 102 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="132 cm" data-in="52 in">132 cm</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--color-border);">
+            <td style="padding: 0.75rem 0.5rem; font-weight:600;">L (UK 12)</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="97 - 103 cm" data-in="38.2 - 40.5 in">97 - 103 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="78 - 84 cm" data-in="30.7 - 33 in">78 - 84 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="103 - 109 cm" data-in="40.5 - 42.9 in">103 - 109 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="134 cm" data-in="52.8 in">134 cm</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.75rem 0.5rem; font-weight:600;">XL (UK 14)</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="104 - 110 cm" data-in="40.9 - 43.3 in">104 - 110 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="85 - 92 cm" data-in="33.5 - 36.2 in">85 - 92 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="110 - 116 cm" data-in="43.3 - 45.7 in">110 - 116 cm</td>
+            <td style="padding: 0.75rem 0.5rem;" data-cm="136 cm" data-in="53.5 in">136 cm</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top: 1.5rem; padding: 1rem; background: var(--color-pink-50); border: 1px solid var(--color-pink-200); border-radius: var(--border-radius-sm); font-size: 0.75rem; color: var(--color-charcoal-700);">
+        <strong>Bespoke In-Store Tailoring:</strong> Need customized sleeve lengths or hem adjustments? Visit our Kurunegala atelier on Colombo Road for complimentary tailoring on all full-price pieces.
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MULTI-STEP LUXURY CHECKOUT MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-label="MoonLK Checkout">
+    <div class="modal-content" style="max-width: 860px; padding: 2.5rem 2rem;">
+      <button class="modal-close-btn" aria-label="Close Checkout">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <!-- Step Indicators Header -->
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 2rem; border-bottom:1px solid var(--color-border); padding-bottom:1rem;">
+        <div style="display:flex; gap:1.5rem;">
+          <div class="checkout-step-indicator active" data-step="1" style="font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; display:flex; align-items:center; gap:0.4rem;">
+            <span style="width:22px; height:22px; border-radius:50%; background:var(--color-charcoal-900); color:#FFF; display:inline-flex; align-items:center; justify-content:center; font-size:0.6875rem;">1</span>
+            Address
+          </div>
+          <div class="checkout-step-indicator" data-step="2" style="font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; display:flex; align-items:center; gap:0.4rem; color:var(--color-charcoal-400);">
+            <span style="width:22px; height:22px; border-radius:50%; background:var(--color-porcelain); display:inline-flex; align-items:center; justify-content:center; font-size:0.6875rem;">2</span>
+            Delivery
+          </div>
+          <div class="checkout-step-indicator" data-step="3" style="font-size:0.75rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; display:flex; align-items:center; gap:0.4rem; color:var(--color-charcoal-400);">
+            <span style="width:22px; height:22px; border-radius:50%; background:var(--color-porcelain); display:inline-flex; align-items:center; justify-content:center; font-size:0.6875rem;">3</span>
+            Payment
+          </div>
+        </div>
+        <div id="checkoutModalTitle" style="font-family:var(--font-serif); font-size:1.1rem; color:var(--color-charcoal-900);">
+          1. Customer & Delivery Address
+        </div>
+      </div>
+
+      <!-- Checkout Form Content -->
+      <form id="checkoutForm">
+        
+        <!-- STEP 1: Address & Details -->
+        <div class="checkout-step-panel" data-step="1">
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">First Name *</label>
+              <input type="text" id="checkoutFirstName" required style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="e.g. Ruwani">
+            </div>
+            <div>
+              <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Last Name *</label>
+              <input type="text" id="checkoutLastName" required style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="e.g. Fernando">
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Email for Receipt *</label>
+              <input type="email" id="checkoutEmail" required style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="ruwani@example.lk">
+            </div>
+            <div>
+              <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Mobile Phone (for Courier Dispatch) *</label>
+              <input type="tel" id="checkoutPhone" required style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="+94 77 123 4567">
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Street Address / Apartment *</label>
+            <input type="text" id="checkoutAddress" required style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="House No, Road, Locality">
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">City / Town *</label>
+              <input type="text" id="checkoutCity" required style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="e.g. Kurunegala or Colombo">
+            </div>
+            <div>
+              <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">District / Province *</label>
+              <select id="checkoutDistrict" style="width:100%; padding:0.75rem; font-size:0.8125rem;">
+                <option value="Kurunegala" selected>Kurunegala (Atelier Priority)</option>
+                <option value="Colombo">Colombo</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Gampaha">Gampaha</option>
+                <option value="Galle">Galle</option>
+                <option value="Matara">Matara</option>
+                <option value="Kalutara">Kalutara</option>
+                <option value="Anuradhapura">Anuradhapura</option>
+                <option value="Puttalam">Puttalam</option>
+                <option value="Jaffna">Jaffna</option>
+                <option value="International">International Delivery (Worldwide)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end;">
+            <button type="submit" class="btn btn-dark">Continue to Delivery →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2: Delivery Options -->
+        <div class="checkout-step-panel" data-step="2" style="display: none;">
+          <div style="display:flex; flex-direction:column; gap:1rem; margin-bottom: 2rem;">
+            
+            <label style="display:flex; align-items:center; gap:1rem; padding:1.2rem; border:1px solid var(--color-border); border-radius:var(--border-radius-sm); cursor:pointer;">
+              <input type="radio" name="checkoutDelivery" value="islandwide" checked>
+              <div style="flex:1;">
+                <div style="font-weight:600; color:var(--color-charcoal-900);">Island-wide Sri Lanka Express (2-3 Days)</div>
+                <div style="font-size:0.75rem; color:var(--color-charcoal-600);">Dispatched from Kurunegala with live SMS parcel tracking. Free over LKR 25,000.</div>
+              </div>
+              <span style="font-weight:600; font-size:0.875rem;">LKR 1,200</span>
+            </label>
+
+            <label style="display:flex; align-items:center; gap:1rem; padding:1.2rem; border:1px solid var(--color-border); border-radius:var(--border-radius-sm); cursor:pointer;">
+              <input type="radio" name="checkoutDelivery" value="pickup">
+              <div style="flex:1;">
+                <div style="font-weight:600; color:var(--color-charcoal-900);">Kurunegala Atelier Flagship Self-Pickup (Same Day)</div>
+                <div style="font-size:0.75rem; color:var(--color-charcoal-600);">Pick up your packaged piece in our bespoke silk dustbag at 48 Colombo Road.</div>
+              </div>
+              <span style="font-weight:600; font-size:0.875rem; color:var(--color-pink-deep);">Complimentary</span>
+            </label>
+
+            <label style="display:flex; align-items:center; gap:1rem; padding:1.2rem; border:1px solid var(--color-border); border-radius:var(--border-radius-sm); cursor:pointer;">
+              <input type="radio" name="checkoutDelivery" value="international">
+              <div style="flex:1;">
+                <div style="font-weight:600; color:var(--color-charcoal-900);">DHL Express Worldwide (3-5 Days)</div>
+                <div style="font-size:0.75rem; color:var(--color-charcoal-600);">Express tracked air shipping to UK, USA, Australia, Europe & UAE.</div>
+              </div>
+              <span style="font-weight:600; font-size:0.875rem;">LKR 8,500</span>
+            </label>
+
+          </div>
+
+          <div style="display:flex; justify-content:space-between;">
+            <button type="button" class="btn btn-outline-dark" onclick="window.moonCheckout.goToStep(1)">← Back to Address</button>
+            <button type="submit" class="btn btn-dark">Continue to Payment →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3: Payment Options -->
+        <div class="checkout-step-panel" data-step="3" style="display: none;">
+          <div style="display:flex; flex-direction:column; gap:1rem; margin-bottom: 2rem;">
+            
+            <label style="display:flex; align-items:center; gap:1rem; padding:1.2rem; border:1px solid var(--color-border); border-radius:var(--border-radius-sm); cursor:pointer;">
+              <input type="radio" name="checkoutPayment" value="cod" checked>
+              <div style="flex:1;">
+                <div style="font-weight:600; color:var(--color-charcoal-900);">Cash on Delivery / Bank Transfer upon Courier Delivery</div>
+                <div style="font-size:0.75rem; color:var(--color-charcoal-600);">Pay comfortably when the MoonLK courier hands you your package across Sri Lanka.</div>
+              </div>
+            </label>
+
+            <label style="display:flex; align-items:center; gap:1rem; padding:1.2rem; border:1px solid var(--color-border); border-radius:var(--border-radius-sm); cursor:pointer;">
+              <input type="radio" name="checkoutPayment" value="card">
+              <div style="flex:1;">
+                <div style="font-weight:600; color:var(--color-charcoal-900);">Credit or Debit Card (Visa / MasterCard / Amex)</div>
+                <div style="font-size:0.75rem; color:var(--color-charcoal-600);">256-bit encrypted Sri Lankan bank payment gateway.</div>
+              </div>
+            </label>
+
+            <!-- Optional Card Fields preview -->
+            <div id="creditCardFields" style="display:none; grid-template-columns:1fr 1fr; gap:0.75rem; padding:1rem; background:var(--color-porcelain); border-radius:var(--border-radius-sm);">
+              <div style="grid-column: 1 / -1;">
+                <label style="display:block; font-size:0.7rem; font-weight:600;">Card Number</label>
+                <input type="text" placeholder="•••• •••• •••• ••••" style="width:100%; padding:0.6rem; font-size:0.8125rem;">
+              </div>
+              <div>
+                <label style="display:block; font-size:0.7rem; font-weight:600;">Expiry Date</label>
+                <input type="text" placeholder="MM / YY" style="width:100%; padding:0.6rem; font-size:0.8125rem;">
+              </div>
+              <div>
+                <label style="display:block; font-size:0.7rem; font-weight:600;">CVV</label>
+                <input type="text" placeholder="123" style="width:100%; padding:0.6rem; font-size:0.8125rem;">
+              </div>
+            </div>
+
+            <label style="display:flex; align-items:center; gap:1rem; padding:1.2rem; border:1px solid var(--color-border); border-radius:var(--border-radius-sm); cursor:pointer;">
+              <input type="radio" name="checkoutPayment" value="koko">
+              <div style="flex:1;">
+                <div style="font-weight:600; color:var(--color-charcoal-900);">Koko / Mintpay (Buy Now, Pay in 3 Installments)</div>
+                <div style="font-size:0.75rem; color:var(--color-charcoal-600);">Split your total into 3 monthly interest-free payments of 0% markup.</div>
+              </div>
+            </label>
+
+            <label style="display:flex; align-items:center; gap:1rem; padding:1.2rem; border:1px solid var(--color-border); border-radius:var(--border-radius-sm); cursor:pointer;">
+              <input type="radio" name="checkoutPayment" value="bank">
+              <div style="flex:1;">
+                <div style="font-weight:600; color:var(--color-charcoal-900);">Direct Atelier Bank Deposit (Commercial Bank / Sampath)</div>
+                <div style="font-size:0.75rem; color:var(--color-charcoal-600);">Transfer funds directly to MoonLK Kurunegala Atelier account.</div>
+              </div>
+            </label>
+
+          </div>
+
+          <!-- Itemized Breakdown Box -->
+          <div style="padding:1.25rem; background:var(--color-bg-subtle); border:1px solid var(--color-border); border-radius:var(--border-radius-sm); margin-bottom:1.5rem;">
+            <h5 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.75rem; color:var(--color-charcoal-400);">Order Items Summary</h5>
+            <div id="checkoutItemsSummary"></div>
+            <div style="border-top:1px solid var(--color-border); padding-top:0.75rem; margin-top:0.75rem; display:flex; flex-direction:column; gap:0.35rem; font-size:0.8125rem;">
+              <div style="display:flex; justify-content:space-between;">
+                <span>Subtotal:</span>
+                <span id="checkoutSubtotalVal">LKR 0</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; color:var(--color-pink-deep);" id="checkoutDiscountRow">
+                <span>Atelier Privilege:</span>
+                <span id="checkoutDiscountVal">-LKR 0</span>
+              </div>
+              <div style="display:flex; justify-content:space-between;">
+                <span>Delivery:</span>
+                <span id="checkoutShippingVal">LKR 0</span>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-weight:700; font-size:1.05rem; padding-top:0.4rem; border-top:1px solid var(--color-border);">
+                <span>Final Total:</span>
+                <span id="checkoutGrandTotalVal">LKR 0</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between;">
+            <button type="button" class="btn btn-outline-dark" onclick="window.moonCheckout.goToStep(2)">← Back to Delivery</button>
+            <button type="submit" class="btn btn-blush btn-lg">Place Atelier Order ✓</button>
+          </div>
+        </div>
+
+        <!-- STEP 4: Live Order Confirmation & Printable Receipt -->
+        <div class="checkout-step-panel" data-step="4" style="display: none; text-align: center;">
+          <div style="text-align: center; margin-bottom: 1.25rem;">
+            <img src="assets/logo.jpeg" alt="Moon.Lk Logo" style="width:68px; height:68px; border-radius:50%; object-fit:cover; object-position:center 20%; border:2px solid var(--color-pink-300); margin:0 auto 0.6rem; display:block; box-shadow:0 4px 16px rgba(216, 165, 161, 0.35);">
+            <div style="font-family:var(--font-serif); font-size:1.25rem; font-weight:500; color:var(--color-charcoal-900);">Moon.Lk Clothing Brand</div>
+            <div style="font-size:0.625rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--color-pink-deep); font-weight:600;">Kurunegala Atelier · Official Receipt</div>
+          </div>
+
+          <h3 class="heading-card" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Order Confirmed</h3>
+          <p class="lead-text" style="font-size: 0.9375rem; margin-bottom: 1.5rem;">
+            Thank you for supporting mindful Sri Lankan craftsmanship. Your order has been registered at our Kurunegala Atelier.
+          </p>
+
+          <div style="max-width: 520px; margin: 0 auto; text-align: left; background: var(--color-porcelain); border: 1px solid var(--color-border); border-radius: var(--border-radius-sm); padding: 1.5rem; margin-bottom: 1.75rem;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-charcoal-400);">Order Tracking ID</span>
+              <strong id="confirmOrderNumber" style="font-family: monospace; font-size: 0.9375rem; color: var(--color-charcoal-900);">MLK-2026-0000</strong>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8125rem;">
+              <div><strong>Recipient:</strong> <span id="confirmCustomerName">Customer</span></div>
+              <div><strong>Confirmation Email:</strong> <span id="confirmCustomerEmail">email@example.com</span></div>
+              <div><strong>Delivery Destination:</strong> <span id="confirmDeliveryDestination">Kurunegala, Sri Lanka</span></div>
+              <div><strong>Payment Method:</strong> <span id="confirmPaymentMethod">Cash on Delivery</span></div>
+              <div style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--color-border); display: flex; justify-content: space-between; font-size: 1rem; font-weight: 700;">
+                <span>Total Amount:</span>
+                <span id="confirmOrderTotal">LKR 0</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button type="button" class="btn btn-outline-dark" onclick="window.moonCheckout.printReceipt()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"/>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                <rect x="6" y="14" width="12" height="8"/>
+              </svg>
+              Download / Print Receipt
+            </button>
+            <button type="button" class="btn btn-dark" onclick="window.moonUI.closeModal('checkoutModal'); window.scrollTo({top:0, behavior:'smooth'});">
+              Continue Exploring MoonLK
+            </button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLAGSHIP ATELIER PRIVATE BOOKING MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-label="Book Atelier Fitting">
+    <div class="modal-content" style="max-width: 580px; padding: 2.5rem 2rem;">
+      <button class="modal-close-btn" aria-label="Close Booking">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <span class="subheading-label">Private Atelier Fitting</span>
+      <h3 class="heading-card" style="font-size: 1.85rem; margin: 0.35rem 0 0.75rem;">Reserve Your Kurunegala Session</h3>
+      <p style="font-size: 0.8125rem; color: var(--color-charcoal-600); margin-bottom: 1.5rem;">
+        Enjoy a dedicated 45-minute private appointment at 48 Colombo Road, Kurunegala, with our senior patternmaker and styling director.
+      </p>
+
+      <form id="atelierBookingForm">
+        <div style="margin-bottom: 1rem;">
+          <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Full Name *</label>
+          <input type="text" id="bookName" required style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="Your Name">
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+          <div>
+            <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Contact Number *</label>
+            <input type="tel" id="bookPhone" required style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="+94 77 ...">
+          </div>
+          <div>
+            <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Email *</label>
+            <input type="email" id="bookEmail" required style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="you@email.com">
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Preferred Date *</label>
+            <input type="date" id="bookDate" required style="width:100%; padding:0.75rem; font-size:0.8125rem;">
+          </div>
+          <div>
+            <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Time Slot *</label>
+            <select id="bookTime" style="width:100%; padding:0.75rem; font-size:0.8125rem;">
+              <option>10:30 AM (Morning Session)</option>
+              <option>01:30 PM (Midday Consultation)</option>
+              <option>04:00 PM (Afternoon Fitting)</option>
+              <option>06:00 PM (Dusk Session)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display:block; font-size:0.75rem; font-weight:600; margin-bottom:0.35rem;">Pieces of Interest (Optional)</label>
+          <input type="text" id="bookNotes" style="width:100%; padding:0.75rem; font-size:0.8125rem;" placeholder="e.g. Aura Silk Slip Gown, Men's Linen Blazer...">
+        </div>
+
+        <button type="submit" class="btn btn-dark" style="width: 100%;">Confirm Appointment Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ATELIER JOURNAL ESSAY MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="journalModal" role="dialog" aria-modal="true" aria-label="Journal Essay">
+    <div class="modal-content" style="max-width: 720px; padding: 2.5rem 2rem;">
+      <button class="modal-close-btn" aria-label="Close Essay">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <span class="subheading-label journal-modal-category">Heritage</span>
+      <h2 class="journal-modal-title heading-card" style="font-size: 2rem; margin: 0.5rem 0 0.5rem;">Essay Title</h2>
+      <div class="journal-modal-date" style="font-size:0.75rem; color:var(--color-charcoal-400); margin-bottom: 1.5rem;">Date</div>
+
+      <div style="aspect-ratio: 16 / 9; border-radius: var(--border-radius-sm); overflow:hidden; margin-bottom: 1.5rem;">
+        <img class="journal-modal-image" src="" alt="Journal Visual" style="width:100%; height:100%; object-fit:cover;">
+      </div>
+
+      <div class="journal-modal-body-text">
+        <!-- Body text injected by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FULLSCREEN SEARCH OVERLAY MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="searchModal" role="dialog" aria-modal="true" aria-label="Search Silhouettes">
+    <div class="modal-content" style="max-width: 680px; padding: 2.5rem 2rem;">
+      <button class="modal-close-btn" aria-label="Close Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <span class="subheading-label">Search Atelier</span>
+      <h3 class="heading-card" style="font-size: 1.75rem; margin: 0.35rem 0 1rem;">Find Silhouettes & Fabrics</h3>
+
+      <div style="position: relative; margin-bottom: 1.5rem;">
+        <input type="text" id="overlaySearchInput" placeholder="Search by name, fabric (silk, linen), or category..." style="width:100%; padding:1rem 1.25rem; font-size:1rem; border-radius:var(--border-radius-sm);">
+      </div>
+
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom: 1.5rem;">
+        <span style="font-size:0.75rem; font-weight:600; text-transform:uppercase; color:var(--color-charcoal-400); align-self:center;">Quick Suggestions:</span>
+        <button class="filter-pill" onclick="document.getElementById('overlaySearchInput').value='Linen'; document.getElementById('overlaySearchInput').dispatchEvent(new Event('input'));">Linen</button>
+        <button class="filter-pill" onclick="document.getElementById('overlaySearchInput').value='Silk'; document.getElementById('overlaySearchInput').dispatchEvent(new Event('input'));">Silk</button>
+        <button class="filter-pill" onclick="document.getElementById('overlaySearchInput').value='Blazer'; document.getElementById('overlaySearchInput').dispatchEvent(new Event('input'));">Blazer</button>
+        <button class="filter-pill" onclick="document.getElementById('overlaySearchInput').value='Gown'; document.getElementById('overlaySearchInput').dispatchEvent(new Event('input'));">Gown</button>
+      </div>
+
+      <div id="overlaySearchResults" style="max-height: 380px; overflow-y: auto;">
+        <p style="text-align:center; color:var(--color-charcoal-400); font-size:0.875rem;">Type keywords like "Linen", "Slip Gown", "Blazer", or "Silk"...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/shop.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+/* ==========================================================================
+   MOONLK CLOTHING — RESPONSIVE & MOBILE APP STYLES
+   Fluid Breakpoints, Mobile Navigation Bar, Touch Optimization
+   ========================================================================== */
+
+/* --- Mobile Bottom App Bar --- */
+.mobile-bottom-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--color-border);
+  z-index: 990;
+  box-shadow: 0 -4px 16px rgba(20, 20, 21, 0.05);
+  padding: 0 1rem;
+}
+
+.mobile-bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.mobile-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: var(--color-charcoal-600);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  width: 58px;
+  transition: color var(--transition-fast);
+}
+
+.mobile-nav-item.active,
+.mobile-nav-item:hover {
+  color: var(--color-charcoal-900);
+}
+
+.mobile-nav-item .badge-count {
+  top: -2px;
+  right: 10px;
+}
+
+/* Tablet & Mobile Off-canvas Navigation */
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 82%;
+  max-width: 360px;
+  background: var(--color-white);
+  z-index: 1002;
+  transform: translateX(-100%);
+  transition: transform var(--transition-smooth);
+  box-shadow: 12px 0 40px rgba(20, 20, 21, 0.12);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+}
+
+.mobile-nav-drawer.active {
+  transform: translateX(0);
+}
+
+.mobile-nav-drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mobile-nav-drawer-link {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-charcoal-900);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- Breakpoint: max-width 1200px --- */
+@media (max-width: 1200px) {
+  .category-portals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+}
+
+/* --- Breakpoint: max-width 992px (Tablet) --- */
+@media (max-width: 992px) {
+  .header-nav {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-media-wrap {
+    order: -1;
+  }
+
+  .hero-media-card {
+    max-width: 100%;
+    aspect-ratio: 4 / 4.8;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+
+  .lookbook-spread-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .flagship-card {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .insta-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-modal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-modal-gallery {
+    padding: 1.5rem;
+  }
+
+  .product-modal-details {
+    padding: 1.5rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* --- Breakpoint: max-width 768px (Mobile Devices) --- */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 64px; /* Room for mobile bottom bar */
+  }
+
+  .mobile-bottom-bar {
+    display: block;
+  }
+
+  .announcement-item {
+    font-size: 0.625rem;
+    padding: 0 1rem;
+  }
+
+  .brand-logo-emblem {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-logo-title {
+    font-size: 1.35rem;
+  }
+
+  .brand-logo-tagline {
+    font-size: 0.5rem;
+    letter-spacing: 0.16em;
+  }
+
+  .nav-search-btn .nav-search-kbd,
+  .nav-search-btn span {
+    display: none;
+  }
+
+  .nav-search-btn {
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-meta-row {
+    gap: 1.5rem;
+  }
+
+  .category-portals-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .category-portal-card {
+    aspect-ratio: 16 / 10;
+  }
+
+  .shop-filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .category-filter-pills {
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-pill {
+    flex-shrink: 0;
+  }
+
+  .shop-sort-controls {
+    justify-content: space-between;
+  }
+
+  /* 2-col fashion card on mobile like luxury mobile apps */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 0.75rem;
+  }
+
+  .product-card-title {
+    font-size: 1rem;
+  }
+
+  .product-card-price {
+    font-size: 0.8125rem;
+  }
+
+  /* Make hover drawer always accessible or tap-friendly */
+  .product-card-quick-add {
+    display: none; /* In mobile, tap opens quick view modal with full sizing */
+  }
+
+  .drawer {
+    max-width: 100%;
+  }
+
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal-content {
+    max-height: 85vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .story-imagery-mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .story-img-secondary {
+    display: none;
+  }
+
+  .toast-container {
+    bottom: 5rem;
+    right: 1rem;
+    left: 1rem;
+  }
+
+  .toast {
+    max-width: 100%;
+  }
+}
